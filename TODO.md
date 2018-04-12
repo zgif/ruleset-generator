@@ -1,5 +1,7 @@
 # Essentials
 
+* I18n: en/de
+
 # Future
 
 ## Eye candy
