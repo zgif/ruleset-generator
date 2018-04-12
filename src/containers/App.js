@@ -3,6 +3,8 @@ import BaseRulesetSelect from '../components/BaseRulesetSelect';
 import RulesetForm from '../components/RulesetForm';
 import './App.css';
 
+const title = 'zgif: Ruleset Generator';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -15,6 +17,10 @@ class App extends Component {
       .then(response => response.json())
       .then(entity => this.entity = entity)
     ;
+  }
+
+  componentDidMount() {
+    document.title = title;
   }
 
   render() {
