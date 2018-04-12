@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import BaseRulesetSelect from '../components/BaseRulesetSelect';
+import RulesetForm from '../components/RulesetForm';
 import './App.css';
 
 class App extends Component {
@@ -18,6 +20,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <BaseRulesetSelect />
+        <RulesetForm entity={this.entity} />
       </div>
     );
   }
