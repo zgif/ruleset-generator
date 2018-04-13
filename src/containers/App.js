@@ -13,6 +13,9 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      ruleset: null
+    }
 
     ZgifApi.fetchRulesets()
       .then(rulesets => this.setState({rulesets}));
@@ -22,7 +25,25 @@ class App extends Component {
     document.title = appTitle;
   }
 
+  onRulesetChange = (rulesetId) => {
+    ZgifApi.fetchRuleset(rulesetId)
+      .then(ruleset => this.setState({ruleset}))
+    ;
+  }
+
   render() {
+    const baseRulesetSelect = this.state.rulesets && (
+      <BaseRulesetSelect rulesets={this.state.rulesets}
+                         defaultValue={this.state.ruleset && this.state.ruleset.id}
+                         onChange={this.onRulesetChange}/>
+    );
+
+    const rulesetFormGrid = this.state.ruleset && (
+      <Grid item xs={12}>
+        <RulesetForm ruleset={this.state.ruleset} />
+      </Grid>
+    );
+
     return (
       <div className="App">
         <CssBaseline />
@@ -36,13 +57,13 @@ class App extends Component {
 
         <Grid container justify="center" className="App__Grid">
           <Grid item xs={12}>
-            <BaseRulesetSelect />
             <Typography paragraph>
               {appDescription}
             </Typography>
+            {baseRulesetSelect}
           </Grid>
           
-          <RulesetForm entity={this.entity} />
+          {rulesetFormGrid}
         </Grid>
       </div>
     );

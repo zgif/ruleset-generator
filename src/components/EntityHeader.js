@@ -10,7 +10,7 @@ class EntityHeader extends Component {
           <Typography component="h1" variant="title">
             {this.props.name}
           </Typography>
-          <RuleSelect />
+          <RuleSelect defaultValue={this.props.usage}/>
         </label>
       </header>
     );

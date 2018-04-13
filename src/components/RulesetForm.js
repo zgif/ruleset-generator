@@ -7,7 +7,7 @@ class RulesetForm extends Component {
   render() {
     return (
       <form>
-        <EntityList entities={this.props.entity ? [this.props.entity] : []} />
+        <EntityList entities={this.props.ruleset ? this.props.ruleset.entities : []} />
         <Button size="large" variant="raised" color="primary">
           {generateRuleset}
         </Button>
