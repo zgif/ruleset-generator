@@ -40,11 +40,13 @@ class AddItemDialog extends Component {
         open={this.props.open}
         onEntered={this.onEntered}
         onExited={this.onExited}
+        PaperProps={{style: {overflowY: 'visible'}}}
       >
         <DialogTitle>{this.props.title}</DialogTitle>
 
         <DialogContent
-          style={{overflowY: 'visible'}}>
+          style={{overflowY: 'visible'}}
+          >
           <Select
             value={this.state.value}
             onChange={this.onSelectChange}
