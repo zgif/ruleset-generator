@@ -8,7 +8,7 @@ class FieldList extends Component {
       <List>
         {this.props.fields.map(field => (
           <ListItem key={field.name} disableGutters>
-            <ListItemText>
+            <ListItemText style={{paddingRight: 0}}>
               <Field {...field} />
             </ListItemText>
           </ListItem>

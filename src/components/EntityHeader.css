@@ -1,0 +1,4 @@
+.EntityHeader h1 {
+  /* Aligning with material-ui's Select */
+  padding: 6px 0 7px;
+}
