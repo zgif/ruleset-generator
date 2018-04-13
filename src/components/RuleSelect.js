@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Select from 'material-ui/Select';
+import { usageOptions } from '../utils/Texts.js';
 
 const options = [
   {
@@ -8,18 +9,18 @@ const options = [
   },
 
   {
-    text: 'core',
-    value: 'core'
+    value: 'core',
+    text: usageOptionTexts.core
   },
 
   {
-    text: 'not',
-    value: 'not'
+    value: 'not',
+    text: usageOptionTexts.not
   },
 
   {
-    text: 'optional',
-    value: 'optional'
+    value: 'optional',
+    text: usageOptionTexts.optional
   }
 ];
 

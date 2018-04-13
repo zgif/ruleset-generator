@@ -6,6 +6,13 @@ export const appDescription = `
 
 export const baseRuleset = 'Base ruleset';
 
+export const usage = 'Usage';
+export const usageOptions = {
+  core: 'core',
+  optional: 'optional',
+  not: 'not'
+};
+
 export const generateRuleset = 'Generate ruleset';
 export const addField = 'Add field';
 export const addEntity = 'Add entity';
