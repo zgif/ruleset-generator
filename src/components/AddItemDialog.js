@@ -13,6 +13,9 @@ class AddItemDialog extends Component {
 
   onEntered = () => {
     this.props.fetchOptions()
+      .then(options => options.filter(option => (
+        !this.props.unavailableOptions.includes(option)
+      )))
       .then(options => options.map(option => {
         return {label: option, value: option}
       }))

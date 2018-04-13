@@ -12,6 +12,7 @@ class AddFieldDialog extends Component {
         onClose={onClose}
         open={open}
         fetchOptions={this.fetchOptions}
+        unavailableOptions={this.getUnavailableOptions()}
         title={addFieldTo(this.props.entityName)}
         addButtonText={addField}
         />
@@ -22,6 +23,10 @@ class AddFieldDialog extends Component {
     return ZgifApi.fetchEntity(this.props.entityName)
       .then(entity => entity.fields)
     ;
+  }
+
+  getUnavailableOptions() {
+    return this.props.currentFields.map(field => field.name);
   }
 }
 

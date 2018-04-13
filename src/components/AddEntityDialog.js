@@ -12,6 +12,7 @@ class AddEntityDialog extends Component {
         onClose={onClose}
         open={open}
         fetchOptions={this.fetchOptions}
+        unavailableOptions={this.getUnavailableOptions()}
         title={addEntityTo(this.props.entityName)}
         addButtonText={addEntity}
         />
@@ -22,6 +23,10 @@ class AddEntityDialog extends Component {
     return ZgifApi.fetchEntity(this.props.entityName)
       .then(entity => entity.entities.map(entity => entity.name))
     ;
+  }
+
+  getUnavailableOptions() {
+    return this.props.currentEntities.map(entity => entity.name);
   }
 }
 

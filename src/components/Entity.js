@@ -60,10 +60,12 @@ class Entity extends Component {
   
         <AddFieldDialog entityName={this.props.name}
                         open={this.state.addingField}
-                        onClose={this.onAddFieldDialogClose} />
+                        onClose={this.onAddFieldDialogClose}
+                        currentFields={this.props.fields} />
         <AddEntityDialog entityName={this.props.name}
                          open={this.state.addingEntity}
-                         onClose={this.onAddEntityDialogClose} />
+                         onClose={this.onAddEntityDialogClose}
+                         currentEntities={this.props.entities}/>
       </Card>
     );
   }
