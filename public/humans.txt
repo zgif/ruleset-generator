@@ -1,0 +1,14 @@
+/* TEAM */
+
+- Frontend developer: Leonardo Schlossmacher.
+  Berlin, Germany
+  leods92.com/e@leods92.com
+- Backend developer: Pascal Houdek.
+- Business advisor: Thomas Krings
+
+
+/* THANKS */
+                            
+- Architrave GmbH (https://architrave.de)
+- gif e.V. (https://www.gif-ev.de/)
+- IRM Network (https://irm-net.com/)
