@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Entity from './Entity.js';
+import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 
 class EntityList extends Component {
   renderEntity(entity) {
@@ -12,13 +13,15 @@ class EntityList extends Component {
 
   render() {
     return (
-      <ul>
+      <List>
         {this.props.entities.map(entity => (
-          <li key={entity.entityName}>
-            {this.renderEntity(entity)}
-          </li>
+          <ListItem key={entity.entityName}>
+            <ListItemText>
+              {this.renderEntity(entity)}
+            </ListItemText>
+          </ListItem>
         ))}
-      </ul>
+      </List>
     );
   }
 }
