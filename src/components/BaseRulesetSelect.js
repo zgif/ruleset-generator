@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Select from 'material-ui/Select';
-import { MenuItem } from 'material-ui/Menu';
 import { InputLabel } from 'material-ui/Input';
 import { FormControl } from 'material-ui/Form';
 import { baseRuleset } from '../utils/Texts';
@@ -13,21 +12,23 @@ class BaseRulesetSelect extends Component {
     }
   }
 
-  renderMenuItems() {
+  renderOptions() {
     return this.props.rulesets.map(ruleset => (
-      <MenuItem key={ruleset.id} value={ruleset.id}>{ruleset.name}</MenuItem>
+      <option key={ruleset.id} value={ruleset.id}>
+        {ruleset.name}
+      </option>
     ));
   }
 
   onChange = (event) => {
-    const value = event.target.value;
+    const value = event.currentTarget.value;
 
     this.setState({ value });
     this.props.onChange(value);
   }
 
   render() {
-    const menuItems = this.renderMenuItems();
+    const options = this.renderOptions();
 
     return (
       <FormControl>
@@ -36,14 +37,15 @@ class BaseRulesetSelect extends Component {
         </InputLabel>
         <Select
           style={{minWidth: '200px'}}
-          autoWidth
+          native
           value={this.state.value}
           inputProps={{
             id: 'base-ruleset'
           }}
           onChange={this.onChange}
         >
-          {menuItems}
+          <option></option>
+          {options}
         </Select>
       </FormControl>
     );

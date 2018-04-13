@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
 import Select from 'material-ui/Select';
-import { MenuItem } from 'material-ui/Menu';
 import { FormControl } from 'material-ui/Form';
 import { usageOptions as usageOptionTexts } from '../utils/Texts.js';
 
 const usageOptions = [
-  {
-    text: '',
-    value: ''
-  },
-
   {
     value: 'core',
     text: usageOptionTexts.core
@@ -58,6 +52,7 @@ class RuleSelect extends Component {
           value={this.state.value}
           onChange={this.onChange}
         >
+          <option></option>
           {options}
         </Select>
       </FormControl>

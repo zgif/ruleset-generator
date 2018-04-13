@@ -26,6 +26,10 @@ class App extends Component {
   }
 
   onRulesetChange = (rulesetId) => {
+    if (!rulesetId) {
+      return;
+    }
+
     ZgifApi.fetchRuleset(rulesetId)
       .then(ruleset => this.setState({ruleset}))
     ;
