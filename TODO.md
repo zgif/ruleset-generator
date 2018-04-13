@@ -1,5 +1,6 @@
 # Essentials
 
+* Implement nested lists with collapsing etc
 * Properly position elements with a grid
     * https://material-ui-next.com/layout/grid/
 * Build dialog for the addition of new entities and fields
@@ -24,6 +25,11 @@
 
 * I18n: en/de
 * Mobile optimized
+* Make the entities collapsible and collapse all of them initially by default
+
+## Architecture improvements
+
+* Implement PropTypes
 
 ## Eye candy
 
