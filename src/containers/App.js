@@ -6,20 +6,15 @@ import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import CssBaseline from 'material-ui/CssBaseline';
 import { title } from '../utils/Texts.js';
+import ZgifApi from '../utils/ZgifApi.js';
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.fetchEntity()
-      .then(() => this.forceUpdate());
-  }
 
-  fetchEntity() {
-    return fetch('api/company.json')
-      .then(response => response.json())
-      .then(entity => this.entity = entity)
-    ;
+    ZgifApi.fetchRulesets()
+      .then(rulesets => this.setState({rulesets}));
   }
 
   componentDidMount() {
