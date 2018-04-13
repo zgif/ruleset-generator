@@ -36,6 +36,7 @@
 ## Eye candy
 
 * gif branding
+* proper font-face with react-select
 * Make the style of react-select match material-ui
 * fix the position of the "generate" button, maybe in the header
 * icons: favicon and manifest icons
