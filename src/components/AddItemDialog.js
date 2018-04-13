@@ -13,6 +13,9 @@ class AddItemDialog extends Component {
 
   onEntered = () => {
     this.props.fetchOptions()
+      .then(options => options.map(option => {
+        return {label: option, value: option}
+      }))
       .then(options => this.setState({options}))
     ;
   }
