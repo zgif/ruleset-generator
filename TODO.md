@@ -16,10 +16,16 @@
 * Mobile optimized
 * Make the entities collapsible and collapse all of them initially by default
 
+## UX
+
+* Add loading indicators while waiting for backend
+    * https://material-ui-next.com/demos/progress/#progress
+
 ## Architecture improvements
 
 * Implement PropTypes
 * Use label[for] instead of wrapping labels (not done because it requires a unique identifier for fields and entities)
+* Cache fetched entities for faster adding of fields
 
 ## Eye candy
 
