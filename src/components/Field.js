@@ -6,7 +6,7 @@ import './Field.css';
 class Field extends Component {
   render() {
     return (
-      <Grid container xs={12} component="label">
+      <Grid container component="label">
         <Grid item xs={6} className="Field__Name">
           {this.props.name}
         </Grid>

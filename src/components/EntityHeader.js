@@ -8,7 +8,7 @@ class EntityHeader extends Component {
   render() {
     return (
       <header className="EntityHeader">
-        <Grid container xs={12} component="label">
+        <Grid container component="label">
           <Grid item xs={6}>
             <Typography component="h1" variant="title">
               {this.props.name}
