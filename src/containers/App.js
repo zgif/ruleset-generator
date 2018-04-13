@@ -4,6 +4,7 @@ import RulesetForm from '../components/RulesetForm';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
+import CssBaseline from 'material-ui/CssBaseline';
 import './App.css';
 
 const title = 'zgif: Ruleset Generator';
@@ -29,6 +30,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <CssBaseline />
         <AppBar position="static" color="default">
           <Toolbar>
             <Typography variant="title" color="inherit">
