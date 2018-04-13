@@ -1,7 +1,5 @@
 # Essentials
 
-* Properly position elements with a grid
-    * https://material-ui-next.com/layout/grid/
 * Build dialog for the addition of new entities and fields
     * https://material-ui-next.com/demos/dialogs/
     * https://material-ui-next.com/demos/selection-controls/
