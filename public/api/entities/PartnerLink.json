@@ -1,5 +1,5 @@
 {
-    "entityName": "PartnerLink",
+    "name": "PartnerLink",
     "label": {
         "de": "Lorem Ipsum - de",
         "en": "Lorem Ipsum - en"
@@ -87,9 +87,9 @@
         "transactionQ4",
         "extension_map"
     ],
-    "subEntities": [
+    "entities": [
         {
-            "entityName": "PartnerLink",
+            "name": "PartnerLink",
             "label": {
                 "de": "Lorem Ipsum - de",
                 "en": "Lorem Ipsum - en"
@@ -103,10 +103,10 @@
                 "en": "dummy - en"
             },
             "fields": [],
-            "subEntities": []
+            "entities": []
         },
         {
-            "entityName": "SubCompany",
+            "name": "SubCompany",
             "label": {
                 "de": "Lorem Ipsum - de",
                 "en": "Lorem Ipsum - en"
@@ -122,10 +122,10 @@
             "fields": [
                 "extension_map"
             ],
-            "subEntities": []
+            "entities": []
         },
         {
-            "entityName": "CurrencyArea",
+            "name": "CurrencyArea",
             "label": {
                 "de": "Lorem Ipsum - de",
                 "en": "Lorem Ipsum - en"
@@ -148,10 +148,10 @@
                 "propertyAssetLiquidity",
                 "extension_map"
             ],
-            "subEntities": []
+            "entities": []
         },
         {
-            "entityName": "Loan",
+            "name": "Loan",
             "label": {
                 "de": "Lorem Ipsum - de",
                 "en": "Lorem Ipsum - en"
@@ -178,10 +178,10 @@
                 "shareholderName",
                 "extension_map"
             ],
-            "subEntities": []
+            "entities": []
         },
         {
-            "entityName": "Share",
+            "name": "Share",
             "label": {
                 "de": "Lorem Ipsum - de",
                 "en": "Lorem Ipsum - en"
@@ -206,10 +206,10 @@
                 "securityType",
                 "extension_map"
             ],
-            "subEntities": []
+            "entities": []
         },
         {
-            "entityName": "Property",
+            "name": "Property",
             "label": {
                 "de": "Lorem Ipsum - de",
                 "en": "Lorem Ipsum - en"
@@ -447,9 +447,9 @@
                 "address",
                 "extension_map"
             ],
-            "subEntities": [
+            "entities": [
                 {
-                    "entityName": "PartnerLink",
+                    "name": "PartnerLink",
                     "label": {
                         "de": "Lorem Ipsum - de",
                         "en": "Lorem Ipsum - en"
@@ -463,10 +463,10 @@
                         "en": "dummy - en"
                     },
                     "fields": [],
-                    "subEntities": []
+                    "entities": []
                 },
                 {
-                    "entityName": "Land",
+                    "name": "Land",
                     "label": {
                         "de": "Lorem Ipsum - de",
                         "en": "Lorem Ipsum - en"
@@ -504,9 +504,9 @@
                         "address",
                         "extension_map"
                     ],
-                    "subEntities": [
+                    "entities": [
                         {
-                            "entityName": "Unit",
+                            "name": "Unit",
                             "label": {
                                 "de": "Lorem Ipsum - de",
                                 "en": "Lorem Ipsum - en"
@@ -564,9 +564,9 @@
                                 "address",
                                 "extension_map"
                             ],
-                            "subEntities": [
+                            "entities": [
                                 {
-                                    "entityName": "PartnerLink",
+                                    "name": "PartnerLink",
                                     "label": {
                                         "de": "Lorem Ipsum - de",
                                         "en": "Lorem Ipsum - en"
@@ -580,14 +580,14 @@
                                         "en": "dummy - en"
                                     },
                                     "fields": [],
-                                    "subEntities": []
+                                    "entities": []
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "entityName": "Building",
+                    "name": "Building",
                     "label": {
                         "de": "Lorem Ipsum - de",
                         "en": "Lorem Ipsum - en"
@@ -643,9 +643,9 @@
                         "lastEnergyRating",
                         "extension_map"
                     ],
-                    "subEntities": [
+                    "entities": [
                         {
-                            "entityName": "Unit",
+                            "name": "Unit",
                             "label": {
                                 "de": "Lorem Ipsum - de",
                                 "en": "Lorem Ipsum - en"
@@ -703,9 +703,9 @@
                                 "address",
                                 "extension_map"
                             ],
-                            "subEntities": [
+                            "entities": [
                                 {
-                                    "entityName": "PartnerLink",
+                                    "name": "PartnerLink",
                                     "label": {
                                         "de": "Lorem Ipsum - de",
                                         "en": "Lorem Ipsum - en"
@@ -719,14 +719,14 @@
                                         "en": "dummy - en"
                                     },
                                     "fields": [],
-                                    "subEntities": []
+                                    "entities": []
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "entityName": "Lease",
+                    "name": "Lease",
                     "label": {
                         "de": "Lorem Ipsum - de",
                         "en": "Lorem Ipsum - en"
@@ -792,9 +792,9 @@
                         "turnoverSortiment",
                         "extension_map"
                     ],
-                    "subEntities": [
+                    "entities": [
                         {
-                            "entityName": "PartnerLink",
+                            "name": "PartnerLink",
                             "label": {
                                 "de": "Lorem Ipsum - de",
                                 "en": "Lorem Ipsum - en"
@@ -808,10 +808,10 @@
                                 "en": "dummy - en"
                             },
                             "fields": [],
-                            "subEntities": []
+                            "entities": []
                         },
                         {
-                            "entityName": "UnitLeased",
+                            "name": "UnitLeased",
                             "label": {
                                 "de": "Lorem Ipsum - de",
                                 "en": "Lorem Ipsum - en"
@@ -825,9 +825,9 @@
                                 "en": "dummy - en"
                             },
                             "fields": [],
-                            "subEntities": [
+                            "entities": [
                                 {
-                                    "entityName": "Term",
+                                    "name": "Term",
                                     "label": {
                                         "de": "Lorem Ipsum - de",
                                         "en": "Lorem Ipsum - en"
@@ -896,12 +896,12 @@
                                         "vacancyDuration",
                                         "extension_map"
                                     ],
-                                    "subEntities": []
+                                    "entities": []
                                 }
                             ]
                         },
                         {
-                            "entityName": "Term",
+                            "name": "Term",
                             "label": {
                                 "de": "Lorem Ipsum - de",
                                 "en": "Lorem Ipsum - en"
@@ -970,12 +970,12 @@
                                 "vacancyDuration",
                                 "extension_map"
                             ],
-                            "subEntities": []
+                            "entities": []
                         }
                     ]
                 },
                 {
-                    "entityName": "Project",
+                    "name": "Project",
                     "label": {
                         "de": "Lorem Ipsum - de",
                         "en": "Lorem Ipsum - en"
@@ -1006,9 +1006,9 @@
                         "address",
                         "extension_map"
                     ],
-                    "subEntities": [
+                    "entities": [
                         {
-                            "entityName": "PartnerLink",
+                            "name": "PartnerLink",
                             "label": {
                                 "de": "Lorem Ipsum - de",
                                 "en": "Lorem Ipsum - en"
@@ -1022,12 +1022,12 @@
                                 "en": "dummy - en"
                             },
                             "fields": [],
-                            "subEntities": []
+                            "entities": []
                         }
                     ]
                 },
                 {
-                    "entityName": "ServiceContract",
+                    "name": "ServiceContract",
                     "label": {
                         "de": "Lorem Ipsum - de",
                         "en": "Lorem Ipsum - en"
@@ -1054,9 +1054,9 @@
                         "terminationLegitDeadline",
                         "extension_map"
                     ],
-                    "subEntities": [
+                    "entities": [
                         {
-                            "entityName": "PartnerLink",
+                            "name": "PartnerLink",
                             "label": {
                                 "de": "Lorem Ipsum - de",
                                 "en": "Lorem Ipsum - en"
@@ -1070,12 +1070,12 @@
                                 "en": "dummy - en"
                             },
                             "fields": [],
-                            "subEntities": []
+                            "entities": []
                         }
                     ]
                 },
                 {
-                    "entityName": "Loan",
+                    "name": "Loan",
                     "label": {
                         "de": "Lorem Ipsum - de",
                         "en": "Lorem Ipsum - en"
@@ -1102,10 +1102,10 @@
                         "shareholderName",
                         "extension_map"
                     ],
-                    "subEntities": []
+                    "entities": []
                 },
                 {
-                    "entityName": "Valuation",
+                    "name": "Valuation",
                     "label": {
                         "de": "Lorem Ipsum - de",
                         "en": "Lorem Ipsum - en"
@@ -1280,9 +1280,9 @@
                         "address",
                         "extension_map"
                     ],
-                    "subEntities": [
+                    "entities": [
                         {
-                            "entityName": "PartnerLink",
+                            "name": "PartnerLink",
                             "label": {
                                 "de": "Lorem Ipsum - de",
                                 "en": "Lorem Ipsum - en"
@@ -1296,12 +1296,12 @@
                                 "en": "dummy - en"
                             },
                             "fields": [],
-                            "subEntities": []
+                            "entities": []
                         }
                     ]
                 },
                 {
-                    "entityName": "Account",
+                    "name": "Account",
                     "label": {
                         "de": "Lorem Ipsum - de",
                         "en": "Lorem Ipsum - en"
@@ -1321,9 +1321,9 @@
                         "valueAccum",
                         "extension_map"
                     ],
-                    "subEntities": [
+                    "entities": [
                         {
-                            "entityName": "BookEntry",
+                            "name": "BookEntry",
                             "label": {
                                 "de": "Lorem Ipsum - de",
                                 "en": "Lorem Ipsum - en"
@@ -1352,9 +1352,9 @@
                                 "vatValue",
                                 "extension_map"
                             ],
-                            "subEntities": [
+                            "entities": [
                                 {
-                                    "entityName": "RecordLink",
+                                    "name": "RecordLink",
                                     "label": {
                                         "de": "Lorem Ipsum - de",
                                         "en": "Lorem Ipsum - en"
@@ -1368,7 +1368,7 @@
                                         "en": "dummy - en"
                                     },
                                     "fields": [],
-                                    "subEntities": []
+                                    "entities": []
                                 }
                             ]
                         }
@@ -1377,7 +1377,7 @@
             ]
         },
         {
-            "entityName": "Account",
+            "name": "Account",
             "label": {
                 "de": "Lorem Ipsum - de",
                 "en": "Lorem Ipsum - en"
@@ -1397,9 +1397,9 @@
                 "valueAccum",
                 "extension_map"
             ],
-            "subEntities": [
+            "entities": [
                 {
-                    "entityName": "BookEntry",
+                    "name": "BookEntry",
                     "label": {
                         "de": "Lorem Ipsum - de",
                         "en": "Lorem Ipsum - en"
@@ -1428,9 +1428,9 @@
                         "vatValue",
                         "extension_map"
                     ],
-                    "subEntities": [
+                    "entities": [
                         {
-                            "entityName": "RecordLink",
+                            "name": "RecordLink",
                             "label": {
                                 "de": "Lorem Ipsum - de",
                                 "en": "Lorem Ipsum - en"
@@ -1444,7 +1444,7 @@
                                 "en": "dummy - en"
                             },
                             "fields": [],
-                            "subEntities": []
+                            "entities": []
                         }
                     ]
                 }
