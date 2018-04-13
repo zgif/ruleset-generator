@@ -1,0 +1,36 @@
+{
+    "id": "5.1bp",
+    "base": {
+        "id": "5.1m",
+        "name": "zgif - ruleset 5.1 (minimum)"
+    },
+    "name": "zgif - ruleset 5.1 (best practice)",
+    "entities": [
+        {
+            "name": "Company",
+            "usage": "core",
+            "fields": [
+                {
+                    "name": "avgDebtTotalInterest",
+                    "usage": "core"
+                },
+                {
+                    "name": "avgFixedInterestPeriod",
+                    "usage": "not"
+                },
+                {
+                    "name": "avgFxForwardTotalTerm",
+                    "usage": "not"
+                }
+            ],
+            "entities": [
+                {
+                    "name": "PartnerLink",
+                    "usage": "optional",
+                    "fields": [],
+                    "entities": []
+                }
+            ]
+        }
+    ]
+}

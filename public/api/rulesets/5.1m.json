@@ -1,0 +1,25 @@
+{
+    "id": "5.1m",
+    "base": null,
+    "name": "zgif - ruleset 5.1 (minimum)",
+    "entities": [
+        {
+            "name": "Company",
+            "usage": "core",
+            "fields": [
+                {
+                    "name": "avgDebtTotalInterest",
+                    "usage": "core"
+                },
+                {
+                    "name": "avgFixedInterestPeriod",
+                    "usage": "not"
+                },
+                {
+                    "name": "avgFxForwardTotalTerm"
+                }
+            ],
+            "entities": []
+        }
+    ]
+}
