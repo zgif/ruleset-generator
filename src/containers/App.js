@@ -5,8 +5,8 @@ import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import CssBaseline from 'material-ui/CssBaseline';
-import { title } from '../utils/Texts.js';
 import Grid from 'material-ui/Grid';
+import { appTitle, appDescription } from '../utils/Texts.js';
 import ZgifApi from '../utils/ZgifApi.js';
 import './App.css';
 
@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    document.title = title;
+    document.title = appTitle;
   }
 
   render() {
@@ -29,7 +29,7 @@ class App extends Component {
         <AppBar position="sticky" color="primary">
           <Toolbar>
             <Typography variant="title" color="inherit">
-              {title}
+              {appTitle}
             </Typography>
           </Toolbar>
         </AppBar>
@@ -37,6 +37,9 @@ class App extends Component {
         <Grid container justify="center" className="App__Grid">
           <Grid item xs={12}>
             <BaseRulesetSelect />
+            <Typography paragraph>
+              {appDescription}
+            </Typography>
           </Grid>
           
           <RulesetForm entity={this.entity} />
