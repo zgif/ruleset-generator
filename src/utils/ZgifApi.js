@@ -14,6 +14,10 @@ class ZgifApi {
   static fetchRuleset(id) {
     return this.fetchJson(`rulesets/${id}`);
   }
+
+  static fetchEntity(name) {
+    return this.fetchJson(`entities/${name}`);
+  }
 }
 
 export default ZgifApi;

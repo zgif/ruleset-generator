@@ -1,0 +1,1454 @@
+{
+    "entityName": "PartnerLink",
+    "label": {
+        "de": "Lorem Ipsum - de",
+        "en": "Lorem Ipsum - en"
+    },
+    "alternativeLabel": {
+        "de": "alt Lorem Ipsum",
+        "en": null
+    },
+    "description": {
+        "de": "dummy - de",
+        "en": "dummy - en"
+    },
+    "fields": [
+        "avgDebtTotalInterest",
+        "avgFixedInterestPeriod",
+        "avgFxForwardTotalTerm",
+        "avgHedgeRatioTotal",
+        "capitalCalled",
+        "capitalCommitted",
+        "capitalFlowM1",
+        "capitalFlowM2",
+        "capitalFlowM3",
+        "capitalFlowQ2",
+        "capitalFlowQ3",
+        "capitalFlowQ4",
+        "capitalNotRecallable",
+        "capitalRecallable",
+        "cashChangeNet",
+        "counterpartPdMax",
+        "currency",
+        "debt",
+        "debtRatioFloating",
+        "debtRatioTarget",
+        "deposit",
+        "distributionShare",
+        "distributionTotal",
+        "holding",
+        "investorCount",
+        "investorShareMax",
+        "isin",
+        "legalform",
+        "liability",
+        "liquidity",
+        "liquidityOther",
+        "loiCountM1",
+        "loiCountM2",
+        "loiCountM3",
+        "loiCountQ2",
+        "loiCountQ3",
+        "loiCountQ4",
+        "loiValueM1",
+        "loiValueM2",
+        "loiValueM3",
+        "loiValueQ2",
+        "loiValueQ3",
+        "loiValueQ4",
+        "netAssetValue",
+        "otherAssets",
+        "property",
+        "provision",
+        "shareAmountChange",
+        "shareAmountDistribution",
+        "shareValue",
+        "shareholderCredit",
+        "shareholderLoan",
+        "shareCount",
+        "signingCountM1",
+        "signingCountM2",
+        "signingCountM3",
+        "signingCountQ2",
+        "signingCountQ3",
+        "signingCountQ4",
+        "signingValueM1",
+        "signingValueM2",
+        "signingValueM3",
+        "signingValueQ2",
+        "signingValueQ3",
+        "signingValueQ4",
+        "ter",
+        "transactionM1",
+        "transactionM2",
+        "transactionM3",
+        "transactionQ2",
+        "transactionQ3",
+        "transactionQ4",
+        "extension_map"
+    ],
+    "subEntities": [
+        {
+            "entityName": "PartnerLink",
+            "label": {
+                "de": "Lorem Ipsum - de",
+                "en": "Lorem Ipsum - en"
+            },
+            "alternativeLabel": {
+                "de": "alt Lorem Ipsum",
+                "en": null
+            },
+            "description": {
+                "de": "dummy - de",
+                "en": "dummy - en"
+            },
+            "fields": [],
+            "subEntities": []
+        },
+        {
+            "entityName": "SubCompany",
+            "label": {
+                "de": "Lorem Ipsum - de",
+                "en": "Lorem Ipsum - en"
+            },
+            "alternativeLabel": {
+                "de": "alt Lorem Ipsum",
+                "en": null
+            },
+            "description": {
+                "de": "dummy - de",
+                "en": "dummy - en"
+            },
+            "fields": [
+                "extension_map"
+            ],
+            "subEntities": []
+        },
+        {
+            "entityName": "CurrencyArea",
+            "label": {
+                "de": "Lorem Ipsum - de",
+                "en": "Lorem Ipsum - en"
+            },
+            "alternativeLabel": {
+                "de": "alt Lorem Ipsum",
+                "en": null
+            },
+            "description": {
+                "de": "dummy - de",
+                "en": "dummy - en"
+            },
+            "fields": [
+                "currencyRate",
+                "currencySwap",
+                "fxHedge",
+                "hedgingRate",
+                "liabilityProvision",
+                "propertyAsset",
+                "propertyAssetLiquidity",
+                "extension_map"
+            ],
+            "subEntities": []
+        },
+        {
+            "entityName": "Loan",
+            "label": {
+                "de": "Lorem Ipsum - de",
+                "en": "Lorem Ipsum - en"
+            },
+            "alternativeLabel": {
+                "de": "alt Lorem Ipsum",
+                "en": null
+            },
+            "description": {
+                "de": "dummy - de",
+                "en": "dummy - en"
+            },
+            "fields": [
+                "bankRefinance",
+                "bic",
+                "debtServiceAmount",
+                "debtServiceRelative",
+                "interestFixedUntil",
+                "interestType",
+                "loanTotalInterest",
+                "loanType",
+                "loanValue",
+                "margin",
+                "shareholderName",
+                "extension_map"
+            ],
+            "subEntities": []
+        },
+        {
+            "entityName": "Share",
+            "label": {
+                "de": "Lorem Ipsum - de",
+                "en": "Lorem Ipsum - en"
+            },
+            "alternativeLabel": {
+                "de": "alt Lorem Ipsum",
+                "en": null
+            },
+            "description": {
+                "de": "dummy - de",
+                "en": "dummy - en"
+            },
+            "fields": [
+                "counterpart",
+                "currentValue",
+                "interestType",
+                "interestValue",
+                "liquidityType",
+                "modifiedDuration",
+                "nominalValue",
+                "securityIsin",
+                "securityType",
+                "extension_map"
+            ],
+            "subEntities": []
+        },
+        {
+            "entityName": "Property",
+            "label": {
+                "de": "Lorem Ipsum - de",
+                "en": "Lorem Ipsum - en"
+            },
+            "alternativeLabel": {
+                "de": "alt Lorem Ipsum",
+                "en": null
+            },
+            "description": {
+                "de": "dummy - de",
+                "en": "dummy - en"
+            },
+            "fields": [
+                "actualRentHotelLeased",
+                "actualRentIndustryLeased",
+                "actualRentLeisureLeased",
+                "actualRentOfficeLeased",
+                "actualRentOtherLeased",
+                "actualRentParkingLeased",
+                "actualRentResidentialLeased",
+                "actualRentRetailLeased",
+                "administrationCosts",
+                "airconditioning",
+                "archValidFrom",
+                "archValidTo",
+                "areaType",
+                "assetAccountType",
+                "assetCategory",
+                "assetManager",
+                "assetValue",
+                "avgLeaseDuration",
+                "badDebt",
+                "balcony",
+                "barrierfree",
+                "capitalExpenditures",
+                "capitalIncome",
+                "cellar",
+                "condition",
+                "constructionDate",
+                "constructionPhase",
+                "contractualRent",
+                "contractualRentExp0",
+                "contractualRentExp0Information",
+                "contractualRentExp1",
+                "contractualRentExp10",
+                "contractualRentExp2",
+                "contractualRentExp3",
+                "contractualRentExp4",
+                "contractualRentExp5",
+                "contractualRentExp6",
+                "contractualRentExp7",
+                "contractualRentExp8",
+                "contractualRentExp9",
+                "contractualRentOpenEnded",
+                "courtage",
+                "currency",
+                "debt",
+                "depreciationFinancialYear",
+                "depreciationRemainingCosts",
+                "depreciationRemainingDuration",
+                "depreciationStart",
+                "developmentBudget",
+                "developmentDescription",
+                "distanceToAirport",
+                "distanceToHighway",
+                "distanceToPublicTransport",
+                "distanceToRailStation",
+                "economicConstructionDate",
+                "elevator",
+                "fairValue",
+                "fairValueEstimated",
+                "fairValueExpected",
+                "greenBuildingCertificate",
+                "greenBuildingVendor",
+                "grossInitialYieldAcquisitionTemplate",
+                "grossPotentialIncome",
+                "grossPotentialIncomeHotel",
+                "grossPotentialIncomeHotelLeased",
+                "grossPotentialIncomeHotelVacant",
+                "grossPotentialIncomeIndustry",
+                "grossPotentialIncomeIndustryLeased",
+                "grossPotentialIncomeIndustryVacant",
+                "grossPotentialIncomeLeisure",
+                "grossPotentialIncomeLeisureLeased",
+                "grossPotentialIncomeLeisureVacant",
+                "grossPotentialIncomeOffice",
+                "grossPotentialIncomeOfficeLeased",
+                "grossPotentialIncomeOfficeVacant",
+                "grossPotentialIncomeOther",
+                "grossPotentialIncomeOtherLeased",
+                "grossPotentialIncomeOtherVacant",
+                "grossPotentialIncomeParking",
+                "grossPotentialIncomeParkingLeased",
+                "grossPotentialIncomeParkingVacant",
+                "grossPotentialIncomeResidential",
+                "grossPotentialIncomeResidentialLeased",
+                "grossPotentialIncomeResidentialVacant",
+                "grossPotentialIncomeRetail",
+                "grossPotentialIncomeRetailLeased",
+                "grossPotentialIncomeRetailVacant",
+                "grossTargetRentHotelLeased",
+                "grossTargetRentHotelVacant",
+                "grossTargetRentIndustryLeased",
+                "grossTargetRentIndustryVacant",
+                "grossTargetRentLeisureLeased",
+                "grossTargetRentLeisureVacant",
+                "grossTargetRentOfficeLeased",
+                "grossTargetRentOfficeVacant",
+                "grossTargetRentOtherLeased",
+                "grossTargetRentOtherVacant",
+                "grossTargetRentParkingLeased",
+                "grossTargetRentParkingVacant",
+                "grossTargetRentResidentialLeased",
+                "grossTargetRentResidentialVacant",
+                "grossTargetRentRetailLeased",
+                "grossTargetRentRetailVacant",
+                "groundRent",
+                "heatingType",
+                "interiorQuality",
+                "invoiceAmount",
+                "ipdObjectId",
+                "ipdPortfolioId",
+                "lanCables",
+                "lastRefurbishmentDate",
+                "leaseContractCount",
+                "leasedArea",
+                "leasedFloorspace",
+                "locationClassificationType",
+                "locationQuality",
+                "maintenanceCosts",
+                "maintenanceCostsExpectedMin",
+                "marketNetYield",
+                "marketRentalValue",
+                "modernisationStatus",
+                "monumentProtectionCategory",
+                "netIncome",
+                "netInitialYieldAcquisitionTemplate",
+                "netOneTimeCosts",
+                "netRunningCosts",
+                "note",
+                "numberOfBathrooms",
+                "numberOfBedrooms",
+                "numberOfCanteen",
+                "numberOfParkingSpaces",
+                "numberOfRooms",
+                "obligation",
+                "openItems",
+                "operatingCosts",
+                "operatingCostsSettled",
+                "optRate",
+                "otherCosts",
+                "overdue",
+                "ownerOccupation",
+                "ownershipShare",
+                "ownershipType",
+                "parkingSpaceCount",
+                "parkingSpaceCountLeased",
+                "partialPurchase",
+                "partialSales",
+                "plotArea",
+                "portfolioName",
+                "portfolioPartName",
+                "portfolioType",
+                "purchaseAdditionalCosts",
+                "purchaseBrokerage",
+                "purchaseCosts",
+                "purchaseCostsAcquisitionTemplate",
+                "purchaseDate",
+                "purchaseFeesTaxes",
+                "purchaseGrossPrice",
+                "purchaseGrossPriceAcquisitionTemplate",
+                "purchaseLegalFees",
+                "purchaseNetPrice",
+                "purchasePriceAcquisitionTemplate",
+                "purchaseTransferTax",
+                "rentableArea",
+                "rentableAreaExp0",
+                "rentableAreaExp1",
+                "rentableAreaExp10",
+                "rentableAreaExp2",
+                "rentableAreaExp3",
+                "rentableAreaExp4",
+                "rentableAreaExp5",
+                "rentableAreaExp6",
+                "rentableAreaExp7",
+                "rentableAreaExp8",
+                "rentableAreaExp9",
+                "rentableAreaHotelLeased",
+                "rentableAreaHotelVacant",
+                "rentableAreaIndustryLeased",
+                "rentableAreaIndustryVacant",
+                "rentableAreaLeisureLeased",
+                "rentableAreaLeisureVacant",
+                "rentableAreaModernisation",
+                "rentableAreaOfficeLeased",
+                "rentableAreaOfficeVacant",
+                "rentableAreaOpenEnded",
+                "rentableAreaOtherLeased",
+                "rentableAreaOtherVacant",
+                "rentableAreaParkingLeased",
+                "rentableAreaParkingVacant",
+                "rentableAreaResidentialLeased",
+                "rentableAreaResidentialVacant",
+                "rentableAreaRetailLeased",
+                "rentableAreaRetailVacant",
+                "rentalIncomeAdditional",
+                "rentalIncomeMain",
+                "rented",
+                "retailLocation",
+                "riskDescription",
+                "riskStyle",
+                "saleAdditionalCosts",
+                "saleBrokerage",
+                "saleCosts",
+                "saleDate",
+                "saleGrossPrice",
+                "saleNetPrice",
+                "saleTransferTax",
+                "shareholderLoan",
+                "status",
+                "tenantCount",
+                "tenantCreditRating",
+                "titleOfExposee",
+                "totalApportionableCosts",
+                "totalGrossCosts",
+                "totalNetCosts",
+                "transactionCurrency",
+                "transactionTF",
+                "transactionType",
+                "unitCount",
+                "useTypePrimary",
+                "useTypeSecondary",
+                "vacancyOperatingCosts",
+                "valueIncreasingReconstructCosts",
+                "address",
+                "extension_map"
+            ],
+            "subEntities": [
+                {
+                    "entityName": "PartnerLink",
+                    "label": {
+                        "de": "Lorem Ipsum - de",
+                        "en": "Lorem Ipsum - en"
+                    },
+                    "alternativeLabel": {
+                        "de": "alt Lorem Ipsum",
+                        "en": null
+                    },
+                    "description": {
+                        "de": "dummy - de",
+                        "en": "dummy - en"
+                    },
+                    "fields": [],
+                    "subEntities": []
+                },
+                {
+                    "entityName": "Land",
+                    "label": {
+                        "de": "Lorem Ipsum - de",
+                        "en": "Lorem Ipsum - en"
+                    },
+                    "alternativeLabel": {
+                        "de": "alt Lorem Ipsum",
+                        "en": null
+                    },
+                    "description": {
+                        "de": "dummy - de",
+                        "en": "dummy - en"
+                    },
+                    "fields": [
+                        "assetAccountType",
+                        "buildingPermission",
+                        "courtage",
+                        "demolition",
+                        "fairValue",
+                        "gfz",
+                        "grz",
+                        "monumentProtectionCategory",
+                        "numberOfParkingSpaces",
+                        "ownerOccupation",
+                        "plotArea",
+                        "propertyManager",
+                        "purchaseDate",
+                        "purchaseGrossPrice",
+                        "purchaseNetPrice",
+                        "riskStyle",
+                        "saleGrossPrice",
+                        "saleNetPrice",
+                        "shortTermConstructible",
+                        "siteConstructibleType",
+                        "siteDevelopmentType",
+                        "address",
+                        "extension_map"
+                    ],
+                    "subEntities": [
+                        {
+                            "entityName": "Unit",
+                            "label": {
+                                "de": "Lorem Ipsum - de",
+                                "en": "Lorem Ipsum - en"
+                            },
+                            "alternativeLabel": {
+                                "de": "alt Lorem Ipsum",
+                                "en": null
+                            },
+                            "description": {
+                                "de": "dummy - de",
+                                "en": "dummy - en"
+                            },
+                            "fields": [
+                                "apartmentType",
+                                "autoLift",
+                                "balcony",
+                                "barrierfree",
+                                "certificateOfEligibility",
+                                "condition",
+                                "courtage",
+                                "endPriceMaintenance",
+                                "estimatedRent",
+                                "garden",
+                                "guestToilet",
+                                "hallHeight",
+                                "hasBuiltinKitchen",
+                                "hasFurniture",
+                                "interiorQuality",
+                                "isLodgerFlat",
+                                "lanCables",
+                                "lastRefurbishmentDate",
+                                "leaseAssumedBeginDate",
+                                "leaseAssumedEndDate",
+                                "lettableArea",
+                                "lettableUnits",
+                                "localReferenceRent",
+                                "marketRentalValue",
+                                "maxNumberOfPerson",
+                                "minimumDivisible",
+                                "modernisationStatus",
+                                "nonSmoker",
+                                "note",
+                                "numberOfBathrooms",
+                                "numberOfBedrooms",
+                                "numberOfParkingSpaces",
+                                "numberOfRooms",
+                                "occupancyState",
+                                "parkingSpaceType",
+                                "summerResidencePractical",
+                                "titleOfExposee",
+                                "useType",
+                                "useTypeCustomer",
+                                "useTypeNote",
+                                "vacancyReason",
+                                "address",
+                                "extension_map"
+                            ],
+                            "subEntities": [
+                                {
+                                    "entityName": "PartnerLink",
+                                    "label": {
+                                        "de": "Lorem Ipsum - de",
+                                        "en": "Lorem Ipsum - en"
+                                    },
+                                    "alternativeLabel": {
+                                        "de": "alt Lorem Ipsum",
+                                        "en": null
+                                    },
+                                    "description": {
+                                        "de": "dummy - de",
+                                        "en": "dummy - en"
+                                    },
+                                    "fields": [],
+                                    "subEntities": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "entityName": "Building",
+                    "label": {
+                        "de": "Lorem Ipsum - de",
+                        "en": "Lorem Ipsum - en"
+                    },
+                    "alternativeLabel": {
+                        "de": "alt Lorem Ipsum",
+                        "en": null
+                    },
+                    "description": {
+                        "de": "dummy - de",
+                        "en": "dummy - en"
+                    },
+                    "fields": [
+                        "airconditioning",
+                        "archValidFrom",
+                        "archValidTo",
+                        "assetAccountType",
+                        "balcony",
+                        "barrierFree",
+                        "condition",
+                        "constructionDate",
+                        "courtage",
+                        "cubature",
+                        "economicConstructionDate",
+                        "elevator",
+                        "energySource",
+                        "floorload",
+                        "guestToilet",
+                        "highVoltage",
+                        "interiorQuality",
+                        "lanCables",
+                        "lastRefurbishmentDate",
+                        "modernisationStatus",
+                        "monumentProtectionCategory",
+                        "numberOfBathrooms",
+                        "numberOfBedrooms",
+                        "numberOfCanteen",
+                        "numberOfFloors",
+                        "numberOfParkingSpaces",
+                        "numberOfRooms",
+                        "ownerOccupation",
+                        "ownershipShare",
+                        "propertyManager",
+                        "purchaseDate",
+                        "ramp",
+                        "rented",
+                        "riskStyle",
+                        "saleGrossPrice",
+                        "usableArea",
+                        "useTypePrimary",
+                        "useTypeSecondary",
+                        "address",
+                        "lastEnergyRating",
+                        "extension_map"
+                    ],
+                    "subEntities": [
+                        {
+                            "entityName": "Unit",
+                            "label": {
+                                "de": "Lorem Ipsum - de",
+                                "en": "Lorem Ipsum - en"
+                            },
+                            "alternativeLabel": {
+                                "de": "alt Lorem Ipsum",
+                                "en": null
+                            },
+                            "description": {
+                                "de": "dummy - de",
+                                "en": "dummy - en"
+                            },
+                            "fields": [
+                                "apartmentType",
+                                "autoLift",
+                                "balcony",
+                                "barrierfree",
+                                "certificateOfEligibility",
+                                "condition",
+                                "courtage",
+                                "endPriceMaintenance",
+                                "estimatedRent",
+                                "garden",
+                                "guestToilet",
+                                "hallHeight",
+                                "hasBuiltinKitchen",
+                                "hasFurniture",
+                                "interiorQuality",
+                                "isLodgerFlat",
+                                "lanCables",
+                                "lastRefurbishmentDate",
+                                "leaseAssumedBeginDate",
+                                "leaseAssumedEndDate",
+                                "lettableArea",
+                                "lettableUnits",
+                                "localReferenceRent",
+                                "marketRentalValue",
+                                "maxNumberOfPerson",
+                                "minimumDivisible",
+                                "modernisationStatus",
+                                "nonSmoker",
+                                "note",
+                                "numberOfBathrooms",
+                                "numberOfBedrooms",
+                                "numberOfParkingSpaces",
+                                "numberOfRooms",
+                                "occupancyState",
+                                "parkingSpaceType",
+                                "summerResidencePractical",
+                                "titleOfExposee",
+                                "useType",
+                                "useTypeCustomer",
+                                "useTypeNote",
+                                "vacancyReason",
+                                "address",
+                                "extension_map"
+                            ],
+                            "subEntities": [
+                                {
+                                    "entityName": "PartnerLink",
+                                    "label": {
+                                        "de": "Lorem Ipsum - de",
+                                        "en": "Lorem Ipsum - en"
+                                    },
+                                    "alternativeLabel": {
+                                        "de": "alt Lorem Ipsum",
+                                        "en": null
+                                    },
+                                    "description": {
+                                        "de": "dummy - de",
+                                        "en": "dummy - en"
+                                    },
+                                    "fields": [],
+                                    "subEntities": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "entityName": "Lease",
+                    "label": {
+                        "de": "Lorem Ipsum - de",
+                        "en": "Lorem Ipsum - en"
+                    },
+                    "alternativeLabel": {
+                        "de": "alt Lorem Ipsum",
+                        "en": null
+                    },
+                    "description": {
+                        "de": "dummy - de",
+                        "en": "dummy - en"
+                    },
+                    "fields": [
+                        "acceptedTerminationDate",
+                        "badDebt",
+                        "beginRentPayment",
+                        "breakOption",
+                        "collectiveObjectIdSender",
+                        "contractCompletionDate",
+                        "contractExtensionDuration",
+                        "courtage",
+                        "debitor",
+                        "debitorId",
+                        "depositAgreed",
+                        "depositAmount",
+                        "depositIncreaseType",
+                        "depositPayed",
+                        "depositType",
+                        "dmiendOption",
+                        "dunningIndicator",
+                        "dunningLevel",
+                        "freeFrom",
+                        "heatingCosts",
+                        "leaseBeginDate",
+                        "leaseContractType",
+                        "leaseEndDate",
+                        "leaseEndType",
+                        "maxNumberOfPerson",
+                        "maxRentalTime",
+                        "minRentalTime",
+                        "nation",
+                        "openItems",
+                        "operatingCostPrepayment",
+                        "operatingCostsSettled",
+                        "option",
+                        "parkingSpaceCosts",
+                        "payment",
+                        "paymentPattern",
+                        "periodsTurnoverRents",
+                        "petsAllowed",
+                        "propertyManager",
+                        "sector",
+                        "tenancy",
+                        "terminated",
+                        "terminationDuration",
+                        "terminationReceiptDate",
+                        "turnoverAdjType",
+                        "turnoverCertificate",
+                        "turnoverMinimum",
+                        "turnoverRent",
+                        "turnoverRentCap",
+                        "turnoverReportingInterval",
+                        "turnoverSortiment",
+                        "extension_map"
+                    ],
+                    "subEntities": [
+                        {
+                            "entityName": "PartnerLink",
+                            "label": {
+                                "de": "Lorem Ipsum - de",
+                                "en": "Lorem Ipsum - en"
+                            },
+                            "alternativeLabel": {
+                                "de": "alt Lorem Ipsum",
+                                "en": null
+                            },
+                            "description": {
+                                "de": "dummy - de",
+                                "en": "dummy - en"
+                            },
+                            "fields": [],
+                            "subEntities": []
+                        },
+                        {
+                            "entityName": "UnitLeased",
+                            "label": {
+                                "de": "Lorem Ipsum - de",
+                                "en": "Lorem Ipsum - en"
+                            },
+                            "alternativeLabel": {
+                                "de": "alt Lorem Ipsum",
+                                "en": null
+                            },
+                            "description": {
+                                "de": "dummy - de",
+                                "en": "dummy - en"
+                            },
+                            "fields": [],
+                            "subEntities": [
+                                {
+                                    "entityName": "Term",
+                                    "label": {
+                                        "de": "Lorem Ipsum - de",
+                                        "en": "Lorem Ipsum - en"
+                                    },
+                                    "alternativeLabel": {
+                                        "de": "alt Lorem Ipsum",
+                                        "en": null
+                                    },
+                                    "description": {
+                                        "de": "dummy - de",
+                                        "en": "dummy - en"
+                                    },
+                                    "fields": [
+                                        "baseIndex",
+                                        "breakOption",
+                                        "conditionAmount",
+                                        "conditionType",
+                                        "contractCompletionDate",
+                                        "contractOption",
+                                        "currency",
+                                        "deltaGraduatedRent",
+                                        "depositAgreed",
+                                        "depositAmount",
+                                        "depositIncreaseType",
+                                        "depositPayed",
+                                        "depositType",
+                                        "dmiendOption",
+                                        "freeFrom",
+                                        "graduateRentBegin",
+                                        "heatingCosts",
+                                        "heatingCostsInServiceCharge",
+                                        "incomeLoss",
+                                        "indexAdjustmentBegin",
+                                        "indexAdjustmentDirection",
+                                        "indexAdjustmentValueType",
+                                        "indexBaseYear",
+                                        "indexCountry",
+                                        "indexMinimumAdjustmentInPercent",
+                                        "indexMinimumAdjustmentInPoints",
+                                        "indexModificationMethod",
+                                        "indexPassthrough",
+                                        "indexRow",
+                                        "interiorQuality",
+                                        "lastRentAdjustmentDate",
+                                        "leasedArea",
+                                        "leasedUnits",
+                                        "occupancyState",
+                                        "optRate",
+                                        "parkingSpaceCosts",
+                                        "payment",
+                                        "rentAdjustmentDate",
+                                        "rentAdjustmentDelay",
+                                        "rentAdjustmentFrequence",
+                                        "rentIncreasePercentage",
+                                        "rentIncreaseType",
+                                        "terminated",
+                                        "terminationDuration",
+                                        "terminationReceiptDate",
+                                        "turnoverAdjType",
+                                        "turnoverCertificate",
+                                        "turnoverMinimum",
+                                        "turnoverRentCap",
+                                        "turnoverReportingInterval",
+                                        "turnoverSortiment",
+                                        "useType",
+                                        "vacancyDuration",
+                                        "extension_map"
+                                    ],
+                                    "subEntities": []
+                                }
+                            ]
+                        },
+                        {
+                            "entityName": "Term",
+                            "label": {
+                                "de": "Lorem Ipsum - de",
+                                "en": "Lorem Ipsum - en"
+                            },
+                            "alternativeLabel": {
+                                "de": "alt Lorem Ipsum",
+                                "en": null
+                            },
+                            "description": {
+                                "de": "dummy - de",
+                                "en": "dummy - en"
+                            },
+                            "fields": [
+                                "baseIndex",
+                                "breakOption",
+                                "conditionAmount",
+                                "conditionType",
+                                "contractCompletionDate",
+                                "contractOption",
+                                "currency",
+                                "deltaGraduatedRent",
+                                "depositAgreed",
+                                "depositAmount",
+                                "depositIncreaseType",
+                                "depositPayed",
+                                "depositType",
+                                "dmiendOption",
+                                "freeFrom",
+                                "graduateRentBegin",
+                                "heatingCosts",
+                                "heatingCostsInServiceCharge",
+                                "incomeLoss",
+                                "indexAdjustmentBegin",
+                                "indexAdjustmentDirection",
+                                "indexAdjustmentValueType",
+                                "indexBaseYear",
+                                "indexCountry",
+                                "indexMinimumAdjustmentInPercent",
+                                "indexMinimumAdjustmentInPoints",
+                                "indexModificationMethod",
+                                "indexPassthrough",
+                                "indexRow",
+                                "interiorQuality",
+                                "lastRentAdjustmentDate",
+                                "leasedArea",
+                                "leasedUnits",
+                                "occupancyState",
+                                "optRate",
+                                "parkingSpaceCosts",
+                                "payment",
+                                "rentAdjustmentDate",
+                                "rentAdjustmentDelay",
+                                "rentAdjustmentFrequence",
+                                "rentIncreasePercentage",
+                                "rentIncreaseType",
+                                "terminated",
+                                "terminationDuration",
+                                "terminationReceiptDate",
+                                "turnoverAdjType",
+                                "turnoverCertificate",
+                                "turnoverMinimum",
+                                "turnoverRentCap",
+                                "turnoverReportingInterval",
+                                "turnoverSortiment",
+                                "useType",
+                                "vacancyDuration",
+                                "extension_map"
+                            ],
+                            "subEntities": []
+                        }
+                    ]
+                },
+                {
+                    "entityName": "Project",
+                    "label": {
+                        "de": "Lorem Ipsum - de",
+                        "en": "Lorem Ipsum - en"
+                    },
+                    "alternativeLabel": {
+                        "de": "alt Lorem Ipsum",
+                        "en": null
+                    },
+                    "description": {
+                        "de": "dummy - de",
+                        "en": "dummy - en"
+                    },
+                    "fields": [
+                        "accountingType",
+                        "allowance",
+                        "budget",
+                        "capitalization",
+                        "contractAmount",
+                        "costGroup",
+                        "costTransfer",
+                        "craft",
+                        "description",
+                        "invoiceAmount",
+                        "numberOfInvoices",
+                        "projectType",
+                        "serviceType",
+                        "specifications",
+                        "address",
+                        "extension_map"
+                    ],
+                    "subEntities": [
+                        {
+                            "entityName": "PartnerLink",
+                            "label": {
+                                "de": "Lorem Ipsum - de",
+                                "en": "Lorem Ipsum - en"
+                            },
+                            "alternativeLabel": {
+                                "de": "alt Lorem Ipsum",
+                                "en": null
+                            },
+                            "description": {
+                                "de": "dummy - de",
+                                "en": "dummy - en"
+                            },
+                            "fields": [],
+                            "subEntities": []
+                        }
+                    ]
+                },
+                {
+                    "entityName": "ServiceContract",
+                    "label": {
+                        "de": "Lorem Ipsum - de",
+                        "en": "Lorem Ipsum - en"
+                    },
+                    "alternativeLabel": {
+                        "de": "alt Lorem Ipsum",
+                        "en": null
+                    },
+                    "description": {
+                        "de": "dummy - de",
+                        "en": "dummy - en"
+                    },
+                    "fields": [
+                        "contractCompletionDate",
+                        "contractExtensionDuration",
+                        "contractOption",
+                        "firstPaymentDate",
+                        "netAmountPerPayment",
+                        "paymentPattern",
+                        "paymentsPerYear",
+                        "serviceType",
+                        "specifications",
+                        "terminated",
+                        "terminationLegitDeadline",
+                        "extension_map"
+                    ],
+                    "subEntities": [
+                        {
+                            "entityName": "PartnerLink",
+                            "label": {
+                                "de": "Lorem Ipsum - de",
+                                "en": "Lorem Ipsum - en"
+                            },
+                            "alternativeLabel": {
+                                "de": "alt Lorem Ipsum",
+                                "en": null
+                            },
+                            "description": {
+                                "de": "dummy - de",
+                                "en": "dummy - en"
+                            },
+                            "fields": [],
+                            "subEntities": []
+                        }
+                    ]
+                },
+                {
+                    "entityName": "Loan",
+                    "label": {
+                        "de": "Lorem Ipsum - de",
+                        "en": "Lorem Ipsum - en"
+                    },
+                    "alternativeLabel": {
+                        "de": "alt Lorem Ipsum",
+                        "en": null
+                    },
+                    "description": {
+                        "de": "dummy - de",
+                        "en": "dummy - en"
+                    },
+                    "fields": [
+                        "bankRefinance",
+                        "bic",
+                        "debtServiceAmount",
+                        "debtServiceRelative",
+                        "interestFixedUntil",
+                        "interestType",
+                        "loanTotalInterest",
+                        "loanType",
+                        "loanValue",
+                        "margin",
+                        "shareholderName",
+                        "extension_map"
+                    ],
+                    "subEntities": []
+                },
+                {
+                    "entityName": "Valuation",
+                    "label": {
+                        "de": "Lorem Ipsum - de",
+                        "en": "Lorem Ipsum - en"
+                    },
+                    "alternativeLabel": {
+                        "de": "alt Lorem Ipsum",
+                        "en": null
+                    },
+                    "description": {
+                        "de": "dummy - de",
+                        "en": "dummy - en"
+                    },
+                    "fields": [
+                        "buildingInDevelopmentState",
+                        "capitalizationRate",
+                        "changeDateForRemainingEconomicLife",
+                        "condition",
+                        "constructionDate",
+                        "constructionPhase",
+                        "contractRentDebit",
+                        "costApproach",
+                        "currency",
+                        "deductionConstructionWorks",
+                        "deductionForVacancy",
+                        "discountRate",
+                        "discountsPremiums",
+                        "economicConstructionDate",
+                        "effectiveArea",
+                        "effectiveAreaIndustry",
+                        "effectiveAreaOffice",
+                        "effectiveAreaOther",
+                        "effectiveAreaResidential",
+                        "effectiveAreaTrade",
+                        "energyRating",
+                        "exchangeRateDate",
+                        "exchangeRateToEUR",
+                        "fairValue",
+                        "floorDescription",
+                        "gfz",
+                        "grossFairValue",
+                        "grossFloorSpaceBelowGround",
+                        "grossFloorSpaceOverground",
+                        "groundLease",
+                        "groundLeaseRemarks",
+                        "groundRent",
+                        "grz",
+                        "interiorQuality",
+                        "internalValuation",
+                        "landValue",
+                        "lostSustainablyGrossYield",
+                        "lostSustainablyGrossYieldIndustry",
+                        "lostSustainablyGrossYieldOffice",
+                        "lostSustainablyGrossYieldOther",
+                        "lostSustainablyGrossYieldResidential",
+                        "lostSustainablyGrossYieldTrade",
+                        "maintenanceBacklog",
+                        "maintenanceCosts",
+                        "maintenanceExpenses",
+                        "managementCosts",
+                        "method",
+                        "normalTotalEconomicLife",
+                        "note",
+                        "numberOfFloors",
+                        "otherOperatingExpenses",
+                        "othersDiscountsPremiums",
+                        "owner",
+                        "ownershipShare",
+                        "ownershipType",
+                        "plotArea",
+                        "purchaseDate",
+                        "purchaseNetPrice",
+                        "remainingEconomicLife",
+                        "remainingLifeOfGroundLease",
+                        "rentAllowance",
+                        "rentalSituationArchiveContractualAnnualRent",
+                        "rentalSituationArchiveEstimatedAnnualRentForLetArea",
+                        "rentalSituationArchiveEstimatedAnnualRentForVacantArea",
+                        "rentalSituationArchiveLetArea",
+                        "rentalSituationArchiveVacantArea",
+                        "rentalSituationGastroContractualAnnualRent",
+                        "rentalSituationGastroEstimatedAnnualRentForLetArea",
+                        "rentalSituationGastroEstimatedAnnualRentForVacantArea",
+                        "rentalSituationGastroLetArea",
+                        "rentalSituationGastroVacantArea",
+                        "rentalSituationHotelContractualAnnualRent",
+                        "rentalSituationHotelEstimatedAnnualRentForLetArea",
+                        "rentalSituationHotelEstimatedAnnualRentForVacantArea",
+                        "rentalSituationHotelLetArea",
+                        "rentalSituationHotelVacantArea",
+                        "rentalSituationIndoorparkingContractualAnnualRent",
+                        "rentalSituationIndoorparkingEstimatedAnnualRentForLetNumbers",
+                        "rentalSituationIndoorparkingEstimatedAnnualRentForVacantNumbers",
+                        "rentalSituationIndoorparkingLetNumbers",
+                        "rentalSituationIndoorparkingVacantNumbers",
+                        "rentalSituationLeisureContractualAnnualRent",
+                        "rentalSituationLeisureEstimatedAnnualRentForLetArea",
+                        "rentalSituationLeisureEstimatedAnnualRentForVacantArea",
+                        "rentalSituationLeisureLetArea",
+                        "rentalSituationLeisureVacantArea",
+                        "rentalSituationMiscArea1ContractualAnnualRent",
+                        "rentalSituationMiscArea1EstimatedAnnualRentForLetArea",
+                        "rentalSituationMiscArea1EstimatedAnnualRentForVacantArea",
+                        "rentalSituationMiscArea1LetArea",
+                        "rentalSituationMiscArea1VacantArea",
+                        "rentalSituationMiscArea2ContractualAnnualRent",
+                        "rentalSituationMiscArea2EstimatedAnnualRentForLetArea",
+                        "rentalSituationMiscArea2EstimatedAnnualRentForVacantArea",
+                        "rentalSituationMiscArea2LetArea",
+                        "rentalSituationMiscArea2VacantArea",
+                        "rentalSituationMiscnumbers1ContractualAnnualRent",
+                        "rentalSituationMiscnumbers1EstimatedAnnualRentForLetNumbers",
+                        "rentalSituationMiscnumbers1EstimatedAnnualRentForVacantNumbers",
+                        "rentalSituationMiscnumbers1LetNumbers",
+                        "rentalSituationMiscnumbers1VacantNumbers",
+                        "rentalSituationMiscnumbers2ContractualAnnualRent",
+                        "rentalSituationMiscnumbers2EstimatedAnnualRentForLetNumbers",
+                        "rentalSituationMiscnumbers2EstimatedAnnualRentForVacantNumbers",
+                        "rentalSituationMiscnumbers2LetNumbers",
+                        "rentalSituationMiscnumbers2VacantNumbers",
+                        "rentalSituationOfficeContractualAnnualRent",
+                        "rentalSituationOfficeEstimatedAnnualRentForLetArea",
+                        "rentalSituationOfficeEstimatedAnnualRentForVacantArea",
+                        "rentalSituationOfficeLetArea",
+                        "rentalSituationOfficeVacantArea",
+                        "rentalSituationOutsideparkingContractualAnnualRent",
+                        "rentalSituationOutsideparkingEstimatedAnnualRentForLetNumbers",
+                        "rentalSituationOutsideparkingEstimatedAnnualRentForVacantNumbers",
+                        "rentalSituationOutsideparkingLetNumbers",
+                        "rentalSituationOutsideparkingVacantNumbers",
+                        "rentalSituationResidentialContractualAnnualRent",
+                        "rentalSituationResidentialEstimatedAnnualRentForLetArea",
+                        "rentalSituationResidentialEstimatedAnnualRentForVacantArea",
+                        "rentalSituationResidentialLetArea",
+                        "rentalSituationResidentialVacantArea",
+                        "rentalSituationRetailContractualAnnualRent",
+                        "rentalSituationRetailEstimatedAnnualRentForLetArea",
+                        "rentalSituationRetailEstimatedAnnualRentForVacantArea",
+                        "rentalSituationRetailLetArea",
+                        "rentalSituationRetailVacantArea",
+                        "rentalSituationStorageContractualAnnualRent",
+                        "rentalSituationStorageEstimatedAnnualRentForLetArea",
+                        "rentalSituationStorageEstimatedAnnualRentForVacantArea",
+                        "rentalSituationStorageLetArea",
+                        "rentalSituationStorageVacantArea",
+                        "retailLocation",
+                        "runningCosts",
+                        "saleDate",
+                        "saleNetPrice",
+                        "singleTenant",
+                        "sustainablyGrossYield",
+                        "sustainablyGrossYieldIndustry",
+                        "sustainablyGrossYieldOffice",
+                        "sustainablyGrossYieldOther",
+                        "sustainablyGrossYieldResidential",
+                        "sustainablyGrossYieldTrade",
+                        "totalGrossFloorSpace",
+                        "totalRentableArea",
+                        "useTypePrimary",
+                        "useTypePrimaryShare",
+                        "useTypeSecondary",
+                        "useTypeSecondaryShare",
+                        "vacantEffectiveAreaIndustry",
+                        "vacantEffectiveAreaOffice",
+                        "vacantEffectiveAreaOther",
+                        "vacantEffectiveAreaResidential",
+                        "vacantEffectiveAreaTrade",
+                        "valuationDate",
+                        "valuationType1",
+                        "valuationType2",
+                        "valueByIncomeApproach",
+                        "valueByIncomeApproachWithoutPremiumsDiscounts",
+                        "address",
+                        "extension_map"
+                    ],
+                    "subEntities": [
+                        {
+                            "entityName": "PartnerLink",
+                            "label": {
+                                "de": "Lorem Ipsum - de",
+                                "en": "Lorem Ipsum - en"
+                            },
+                            "alternativeLabel": {
+                                "de": "alt Lorem Ipsum",
+                                "en": null
+                            },
+                            "description": {
+                                "de": "dummy - de",
+                                "en": "dummy - en"
+                            },
+                            "fields": [],
+                            "subEntities": []
+                        }
+                    ]
+                },
+                {
+                    "entityName": "Account",
+                    "label": {
+                        "de": "Lorem Ipsum - de",
+                        "en": "Lorem Ipsum - en"
+                    },
+                    "alternativeLabel": {
+                        "de": "alt Lorem Ipsum",
+                        "en": null
+                    },
+                    "description": {
+                        "de": "dummy - de",
+                        "en": "dummy - en"
+                    },
+                    "fields": [
+                        "accountType",
+                        "accountingStandard",
+                        "value",
+                        "valueAccum",
+                        "extension_map"
+                    ],
+                    "subEntities": [
+                        {
+                            "entityName": "BookEntry",
+                            "label": {
+                                "de": "Lorem Ipsum - de",
+                                "en": "Lorem Ipsum - en"
+                            },
+                            "alternativeLabel": {
+                                "de": "alt Lorem Ipsum",
+                                "en": null
+                            },
+                            "description": {
+                                "de": "dummy - de",
+                                "en": "dummy - en"
+                            },
+                            "fields": [
+                                "accountingStandard",
+                                "bundesbankFlag",
+                                "date",
+                                "grossValue",
+                                "netValue",
+                                "supplyingCountry",
+                                "taxFlag",
+                                "text",
+                                "transactionType",
+                                "valueConcernCurrency",
+                                "valueDomesticCurrency",
+                                "vat",
+                                "vatValue",
+                                "extension_map"
+                            ],
+                            "subEntities": [
+                                {
+                                    "entityName": "RecordLink",
+                                    "label": {
+                                        "de": "Lorem Ipsum - de",
+                                        "en": "Lorem Ipsum - en"
+                                    },
+                                    "alternativeLabel": {
+                                        "de": "alt Lorem Ipsum",
+                                        "en": null
+                                    },
+                                    "description": {
+                                        "de": "dummy - de",
+                                        "en": "dummy - en"
+                                    },
+                                    "fields": [],
+                                    "subEntities": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "entityName": "Account",
+            "label": {
+                "de": "Lorem Ipsum - de",
+                "en": "Lorem Ipsum - en"
+            },
+            "alternativeLabel": {
+                "de": "alt Lorem Ipsum",
+                "en": null
+            },
+            "description": {
+                "de": "dummy - de",
+                "en": "dummy - en"
+            },
+            "fields": [
+                "accountType",
+                "accountingStandard",
+                "value",
+                "valueAccum",
+                "extension_map"
+            ],
+            "subEntities": [
+                {
+                    "entityName": "BookEntry",
+                    "label": {
+                        "de": "Lorem Ipsum - de",
+                        "en": "Lorem Ipsum - en"
+                    },
+                    "alternativeLabel": {
+                        "de": "alt Lorem Ipsum",
+                        "en": null
+                    },
+                    "description": {
+                        "de": "dummy - de",
+                        "en": "dummy - en"
+                    },
+                    "fields": [
+                        "accountingStandard",
+                        "bundesbankFlag",
+                        "date",
+                        "grossValue",
+                        "netValue",
+                        "supplyingCountry",
+                        "taxFlag",
+                        "text",
+                        "transactionType",
+                        "valueConcernCurrency",
+                        "valueDomesticCurrency",
+                        "vat",
+                        "vatValue",
+                        "extension_map"
+                    ],
+                    "subEntities": [
+                        {
+                            "entityName": "RecordLink",
+                            "label": {
+                                "de": "Lorem Ipsum - de",
+                                "en": "Lorem Ipsum - en"
+                            },
+                            "alternativeLabel": {
+                                "de": "alt Lorem Ipsum",
+                                "en": null
+                            },
+                            "description": {
+                                "de": "dummy - de",
+                                "en": "dummy - en"
+                            },
+                            "fields": [],
+                            "subEntities": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

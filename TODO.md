@@ -1,8 +1,5 @@
 # Essentials
 
-* Build dialog for the addition of new entities and fields
-    * https://material-ui-next.com/demos/dialogs/
-    * https://material-ui-next.com/demos/selection-controls/
 * Display original value next to the RuleSelect
 * Fix some view values not being replaced by empty (e.g. select is not, ruleset changes and the select should be empty but it's still "not")
 * Convert the field rule select to be simple and not native

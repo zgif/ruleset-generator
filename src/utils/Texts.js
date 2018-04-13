@@ -13,6 +13,12 @@ export const usageOptions = {
   not: 'not'
 };
 
-export const generateRuleset = 'Generate ruleset';
 export const addField = 'Add field';
+export const addFieldTo = (targetName) => `Add field to ${targetName}`;
+
 export const addEntity = 'Add entity';
+export const addEntityTo = (targetName) => `Add entity to ${targetName}`;
+
+export const cancel = 'Cancel';
+
+export const generateRuleset = 'Generate ruleset';
