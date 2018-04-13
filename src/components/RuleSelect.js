@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import Select from 'material-ui/Select';
-import { usageOptions } from '../utils/Texts.js';
+import { MenuItem } from 'material-ui/Menu';
+import { FormControl } from 'material-ui/Form';
+import { usageOptions as usageOptionTexts } from '../utils/Texts.js';
 
-const options = [
+const usageOptions = [
   {
     text: '',
     value: ''
@@ -25,21 +27,40 @@ const options = [
 ];
 
 class RuleSelect extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: this.props.defaultValue || ''
+    };
+  }
+
   renderOptions() {
-    return options.map(option => (
+    return usageOptions.map(option => (
       <option key={option.value} value={option.value}>
         {option.text}
       </option>
     ));
   }
 
+  onChange = (event) => {
+    this.setState({
+      value: event.currentTarget.value
+    });
+  }
+
   render() {
     const options = this.renderOptions();
 
     return (
-      <Select native defaultValue={this.props.defaultValue}>
-        {options}
-      </Select>
+      <FormControl>
+        <Select
+          native
+          value={this.state.value}
+          onChange={this.onChange}
+        >
+          {options}
+        </Select>
+      </FormControl>
     );
   }
 }
