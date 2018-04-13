@@ -5,9 +5,8 @@ import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import CssBaseline from 'material-ui/CssBaseline';
+import { title } from '../utils/Texts.js';
 import './App.css';
-
-const title = 'zgif: Ruleset Generator';
 
 class App extends Component {
   constructor(props) {

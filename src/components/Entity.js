@@ -4,6 +4,7 @@ import FieldList from './FieldList.js';
 import EntityList from './EntityList.js';
 import Card, { CardActions, CardContent } from 'material-ui/Card';
 import Button from 'material-ui/Button';
+import { addField, addEntity } from '../utils/Texts.js';
 
 class Entity extends Component {
   render() {
@@ -18,8 +19,12 @@ class Entity extends Component {
           <EntityList entities={this.props.entities} />
         </CardContent>
         <CardActions>
-          <Button size="small" variant="raised" color="secondary">Add field</Button>
-          <Button size="small" variant="raised" color="secondary">Add entity</Button>
+          <Button size="small" variant="raised" color="secondary">
+            {addField}
+          </Button>
+          <Button size="small" variant="raised" color="secondary">
+            {addEntity}
+          </Button>
         </CardActions>
       </Card>
     );
