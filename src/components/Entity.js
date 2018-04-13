@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import RuleSelect from './RuleSelect.js';
 import FieldList from './FieldList.js';
 import EntityList from './EntityList.js';
+
 import Card, { CardActions, CardContent } from 'material-ui/Card';
 import Button from 'material-ui/Button';
+import EntityHeader from './EntityHeader.js';
 import { addField, addEntity } from '../utils/Texts.js';
 
 class Entity extends Component {
@@ -11,10 +12,7 @@ class Entity extends Component {
     return (
       <Card elevation={1} component="article">
         <CardContent>
-          <label>
-            <h1>{this.props.name}</h1>
-            <RuleSelect />
-          </label>
+          <EntityHeader {...this.props} />
           <FieldList fields={this.props.fields} />
           <EntityList entities={this.props.entities} />
         </CardContent>
