@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import Field from './Field.js';
+import List, { ListItem, ListItemText } from 'material-ui/List';
 
 class FieldList extends Component {
   render() {
     return (
-      <ul>
+      <List>
         {this.props.fields.map(field => (
-          <li key={field.name}>
-            <Field name={field.name} defaultValue={field.value} />
-          </li>
+          <ListItem key={field.name} disableGutters>
+            <ListItemText>
+              <Field {...field} />
+            </ListItemText>
+          </ListItem>
         ))}
-      </ul>
+      </List>
     );
   }
 }

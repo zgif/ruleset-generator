@@ -6,6 +6,7 @@ import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import CssBaseline from 'material-ui/CssBaseline';
 import { title } from '../utils/Texts.js';
+import Grid from 'material-ui/Grid';
 import ZgifApi from '../utils/ZgifApi.js';
 import './App.css';
 
@@ -25,15 +26,21 @@ class App extends Component {
     return (
       <div className="App">
         <CssBaseline />
-        <AppBar position="static" color="default">
+        <AppBar position="sticky" color="primary">
           <Toolbar>
             <Typography variant="title" color="inherit">
               {title}
             </Typography>
           </Toolbar>
         </AppBar>
-        <BaseRulesetSelect />
-        <RulesetForm entity={this.entity} />
+
+        <Grid container justify="center" className="App__Grid">
+          <Grid item xs={12}>
+            <BaseRulesetSelect />
+          </Grid>
+          
+          <RulesetForm entity={this.entity} />
+        </Grid>
       </div>
     );
   }

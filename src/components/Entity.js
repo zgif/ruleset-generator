@@ -9,7 +9,7 @@ import { addField, addEntity } from '../utils/Texts.js';
 class Entity extends Component {
   render() {
     return (
-      <Card>
+      <Card elevation={1} component="article">
         <CardContent>
           <label>
             <h1>{this.props.name}</h1>
@@ -19,10 +19,10 @@ class Entity extends Component {
           <EntityList entities={this.props.entities} />
         </CardContent>
         <CardActions>
-          <Button size="small" variant="raised" color="secondary">
+          <Button size="small" color="secondary">
             {addField}
           </Button>
-          <Button size="small" variant="raised" color="secondary">
+          <Button size="small" color="secondary">
             {addEntity}
           </Button>
         </CardActions>

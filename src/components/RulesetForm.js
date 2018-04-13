@@ -8,7 +8,7 @@ class RulesetForm extends Component {
     return (
       <form>
         <EntityList entities={this.props.entity ? [this.props.entity] : []} />
-        <Button size="big" variant="raised" color="primary">
+        <Button size="large" variant="raised" color="primary">
           {generateRuleset}
         </Button>
       </form>

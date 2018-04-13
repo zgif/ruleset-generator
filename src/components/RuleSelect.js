@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Select from 'material-ui/Select';
 
 const options = [
   {
@@ -35,9 +36,9 @@ class RuleSelect extends Component {
     const options = this.renderOptions();
 
     return (
-      <select defaultValue={this.props.defaultValue}>
+      <Select native defaultValue={this.props.defaultValue}>
         {options}
-      </select>
+      </Select>
     );
   }
 }
