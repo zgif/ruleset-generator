@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Entity from './Entity.js';
+import Entity from './Entity';
 import List, { ListItem, ListItemText } from 'material-ui/List';
 
 class EntityList extends Component {

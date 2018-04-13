@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Field from './Field.js';
+import Field from './Field';
 import List, { ListItem, ListItemText } from 'material-ui/List';
 
 class FieldList extends Component {

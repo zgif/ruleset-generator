@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import FieldList from './FieldList.js';
-import EntityList from './EntityList.js';
+import FieldList from './FieldList';
+import EntityList from './EntityList';
 
 import Card, { CardActions, CardContent } from 'material-ui/Card';
 import Button from 'material-ui/Button';
-import EntityHeader from './EntityHeader.js';
-import { addField, addEntity } from '../utils/Texts.js';
+import EntityHeader from './EntityHeader';
+import { addField, addEntity } from '../utils/Texts';
 
 class Entity extends Component {
   render() {

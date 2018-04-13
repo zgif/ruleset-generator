@@ -6,8 +6,8 @@ import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import CssBaseline from 'material-ui/CssBaseline';
 import Grid from 'material-ui/Grid';
-import { appTitle, appDescription } from '../utils/Texts.js';
-import ZgifApi from '../utils/ZgifApi.js';
+import { appTitle, appDescription } from '../utils/Texts';
+import ZgifApi from '../utils/ZgifApi';
 import './App.css';
 
 class App extends Component {

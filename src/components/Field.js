@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import RuleSelect from './RuleSelect.js';
+import RuleSelect from './RuleSelect';
+import Grid from 'material-ui/Grid';
 
 class Field extends Component {
   render() {

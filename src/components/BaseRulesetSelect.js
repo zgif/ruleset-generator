@@ -3,7 +3,7 @@ import Select from 'material-ui/Select';
 import { MenuItem } from 'material-ui/Menu';
 import { InputLabel } from 'material-ui/Input';
 import { FormControl } from 'material-ui/Form';
-import { baseRuleset } from '../utils/Texts.js';
+import { baseRuleset } from '../utils/Texts';
 
 class BaseRulesetSelect extends Component {
   constructor(props) {

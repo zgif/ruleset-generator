@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import EntityList from './EntityList';
 import Button from 'material-ui/Button';
-import { generateRuleset } from '../utils/Texts.js';
+import { generateRuleset } from '../utils/Texts';
 
 class RulesetForm extends Component {
   onSubmit = (event) => {

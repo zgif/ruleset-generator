@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Typography from 'material-ui/Typography';
-import RuleSelect from './RuleSelect.js';
+import RuleSelect from './RuleSelect';
 
 class EntityHeader extends Component {
   render() {
