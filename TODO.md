@@ -12,6 +12,11 @@
 * Decide how to update original object sent and decomposed via props (state?, redux?)
     * https://redux.js.org/introduction/examples
     * http://jamesknelson.com/learn-raw-react-ridiculously-simple-forms/?
+* Compose data used in the views
+    * by either
+        * doing it manually with the ruleset and the entities endpoints
+        * requesting the new backend endpoint with that information ready
+    * Redux?
 
 # Future
 
