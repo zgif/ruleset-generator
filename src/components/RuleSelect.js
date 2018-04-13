@@ -35,7 +35,7 @@ class RuleSelect extends Component {
     const options = this.renderOptions();
 
     return (
-      <select value={this.props.value}>
+      <select defaultValue={this.props.defaultValue}>
         {options}
       </select>
     );

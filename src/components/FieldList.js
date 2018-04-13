@@ -5,9 +5,9 @@ class FieldList extends Component {
   render() {
     return (
       <ul>
-        {this.props.fields.map(fieldName => (
-          <li key={fieldName}>
-            <Field name={fieldName} />
+        {this.props.fields.map(field => (
+          <li key={field.name}>
+            <Field name={field.name} defaultValue={field.value} />
           </li>
         ))}
       </ul>

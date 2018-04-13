@@ -7,7 +7,7 @@ class Field extends Component {
       <div>
         <label>
           {this.props.name}
-          <RuleSelect />
+          <RuleSelect defaultValue={this.props.defaultValue} />
         </label>
       </div>
     );
