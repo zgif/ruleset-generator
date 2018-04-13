@@ -26,11 +26,7 @@ class App extends Component {
   }
 
   onRulesetChange = (rulesetId) => {
-    if (!rulesetId) {
-      return;
-    }
-
-    ZgifApi.fetchRuleset(rulesetId)
+    (rulesetId ? ZgifApi.fetchRuleset(rulesetId) : Promise.resolve())
       .then(ruleset => this.setState({ruleset}))
     ;
   }
