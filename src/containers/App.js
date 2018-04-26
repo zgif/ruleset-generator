@@ -21,8 +21,8 @@ class App extends Component {
     document.title = appTitle;
   }
 
-  onRulesetChange = (rulesetId) => {
-    (rulesetId ? ZgifApi.fetchRuleset(rulesetId) : Promise.resolve())
+  onRulesetChange = (rulesetUrl) => {
+    (rulesetUrl ? ZgifApi.fetchRuleset(rulesetUrl) : Promise.resolve())
       .then(ruleset => this.setState({ ruleset }))
     ;
   }

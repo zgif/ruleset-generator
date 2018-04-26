@@ -14,7 +14,7 @@ class BaseRulesetSelect extends Component {
 
   renderOptions() {
     return this.props.rulesets.map(ruleset => (
-      <option key={ ruleset.id } value={ ruleset.id }>
+      <option key={ ruleset.url } value={ ruleset.url }>
         { ruleset.name }
       </option>
     ));

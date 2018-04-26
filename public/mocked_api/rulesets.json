@@ -1,10 +1,10 @@
 [
     {
-        "id": "5.1m",
+        "url": "5.1m",
         "name": "zgif - ruleset 5.1 (minimum)"
     },
     {
-        "id": "5.1bp",
+        "url": "5.1bp",
         "name": "zgif - ruleset 5.1 (best practice)"
     }
 ]

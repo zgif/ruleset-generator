@@ -18,11 +18,20 @@ class ZgifApi {
   }
 
   static fetchRulesets() {
-    return this.fetchJson('rulesets');
+    if (CURRENT_API_MODE === API_MODE.mocked) {
+      return this.fetchJson('rulesets');
+    }
+
+    // Using a mocked version here too because there's no live endpoint available.
+    return this.fetchJson('rulesets_live', API_MODE.mocked);
   }
 
-  static fetchRuleset(id) {
-    return this.fetchJson(`rulesets/${ id }`);
+  static fetchRuleset(url) {
+    if (CURRENT_API_MODE === API_MODE.mocked) {
+      return this.fetchJson(`rulesets/${ url }`);
+    }
+
+    return this.fetchJson(`ruleset/?ruleset_by_url=${ encodeURI(url) }`);
   }
 
   static fetchEntity(name) {
