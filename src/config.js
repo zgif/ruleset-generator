@@ -5,7 +5,7 @@ export const API_MODE = {
 
 export const API = {
   basePath: {
-    [API_MODE.mocked]: 'api',
+    [API_MODE.mocked]: 'mocked_api',
     [API_MODE.live]: 'https://zgif.org/api'
   }
 };
