@@ -1,8 +1,18 @@
-class ZgifApi {
-  static basePath = 'api';
+import { CURRENT_API_MODE, API_MODE, API } from '../config';
 
-  static fetchJson(path) {
-    return fetch(`${ this.basePath }/${ path }.json`)
+class ZgifApi {
+  static getUrl(path, apiMode) {
+    let url = `${ API.basePath[apiMode] }/${ path }`;
+
+    if (apiMode === API_MODE.mocked) {
+      url += '.json';
+    }
+
+    return url;
+  }
+
+  static fetchJson(path, apiMode = CURRENT_API_MODE) {
+    return fetch(this.getUrl(path, apiMode))
       .then(response => response.json())
     ;
   }
