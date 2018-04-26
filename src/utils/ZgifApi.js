@@ -2,7 +2,7 @@ class ZgifApi {
   static basePath = 'api';
 
   static fetchJson(path) {
-    return fetch(`${this.basePath}/${path}.json`)
+    return fetch(`${ this.basePath }/${ path }.json`)
       .then(response => response.json())
     ;
   }
@@ -12,11 +12,11 @@ class ZgifApi {
   }
 
   static fetchRuleset(id) {
-    return this.fetchJson(`rulesets/${id}`);
+    return this.fetchJson(`rulesets/${ id }`);
   }
 
   static fetchEntity(name) {
-    return this.fetchJson(`entities/${name}`);
+    return this.fetchJson(`entities/${ name }`);
   }
 }
 

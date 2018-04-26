@@ -10,7 +10,7 @@ class AppHeader extends Component {
       <AppBar position="sticky" color="primary">
         <Toolbar>
           <Typography variant="title" color="inherit">
-            {appTitle}
+            { appTitle }
           </Typography>
         </Toolbar>
       </AppBar>

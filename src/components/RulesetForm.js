@@ -10,10 +10,10 @@ class RulesetForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
-        <EntityList entities={this.props.ruleset ? this.props.ruleset.entities : []} />
+      <form onSubmit={ this.onSubmit }>
+        <EntityList entities={ this.props.ruleset ? this.props.ruleset.entities : []} />
         <Button size="large" variant="raised" color="primary">
-          {generateRuleset}
+          { generateRuleset }
         </Button>
       </form>
     );

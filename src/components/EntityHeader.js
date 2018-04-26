@@ -9,13 +9,13 @@ class EntityHeader extends Component {
     return (
       <header className="EntityHeader">
         <Grid container component="label">
-          <Grid item xs={6}>
+          <Grid item xs={ 6 }>
             <Typography component="h1" variant="title">
-              {this.props.name}
+              { this.props.name }
             </Typography>
           </Grid>
-          <Grid item xs={6}>
-            <RuleSelect defaultValue={this.props.usage}/>
+          <Grid item xs={ 6 }>
+            <RuleSelect defaultValue={ this.props.usage }/>
           </Grid>
         </Grid>
       </header>

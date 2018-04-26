@@ -7,11 +7,11 @@ class Field extends Component {
   render() {
     return (
       <Grid container component="label">
-        <Grid item xs={6} className="Field__Name">
-          {this.props.name}
+        <Grid item xs={ 6 } className="Field__Name">
+          { this.props.name }
         </Grid>
-        <Grid item xs={6}>
-          <RuleSelect defaultValue={this.props.usage} />
+        <Grid item xs={ 6 }>
+          <RuleSelect defaultValue={ this.props.usage } />
         </Grid>
       </Grid>
     );

@@ -6,10 +6,10 @@ class EntityList extends Component {
   render() {
     return (
       <List>
-        {this.props.entities.map(entity => (
-          <ListItem key={entity.name} disableGutters>
+        { this.props.entities.map(entity => (
+          <ListItem key={ entity.name } disableGutters>
             <ListItemText>
-              <Entity {...entity} />
+              <Entity { ...entity } />
             </ListItemText>
           </ListItem>
         ))}

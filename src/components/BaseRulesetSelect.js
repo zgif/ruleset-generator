@@ -14,8 +14,8 @@ class BaseRulesetSelect extends Component {
 
   renderOptions() {
     return this.props.rulesets.map(ruleset => (
-      <option key={ruleset.id} value={ruleset.id}>
-        {ruleset.name}
+      <option key={ ruleset.id } value={ ruleset.id }>
+        { ruleset.name }
       </option>
     ));
   }
@@ -33,19 +33,19 @@ class BaseRulesetSelect extends Component {
     return (
       <FormControl>
         <InputLabel htmlFor="base-ruleset">
-          {baseRuleset}
+          { baseRuleset }
         </InputLabel>
         <Select
-          style={{minWidth: '200px'}}
+          style={{ minWidth: '200px'}}
           native
-          value={this.state.value}
+          value={ this.state.value }
           inputProps={{
             id: 'base-ruleset'
           }}
-          onChange={this.onChange}
+          onChange={ this.onChange }
         >
           <option></option>
-          {options}
+          { options }
         </Select>
       </FormControl>
     );

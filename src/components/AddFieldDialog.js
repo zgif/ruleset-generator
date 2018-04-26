@@ -9,12 +9,12 @@ class AddFieldDialog extends Component {
 
     return (
       <AddItemDialog
-        onClose={onClose}
-        open={open}
-        fetchOptions={this.fetchOptions}
-        unavailableOptions={this.getUnavailableOptions()}
-        title={addFieldTo(this.props.entityName)}
-        addButtonText={addField}
+        onClose={ onClose }
+        open={ open }
+        fetchOptions={ this.fetchOptions }
+        unavailableOptions={ this.getUnavailableOptions()}
+        title={ addFieldTo(this.props.entityName)}
+        addButtonText={ addField }
         />
     );
   }

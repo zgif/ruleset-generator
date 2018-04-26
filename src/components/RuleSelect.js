@@ -30,8 +30,8 @@ class RuleSelect extends Component {
 
   renderOptions() {
     return usageOptions.map(option => (
-      <option key={option.value} value={option.value}>
-        {option.text}
+      <option key={ option.value } value={ option.value }>
+        { option.text }
       </option>
     ));
   }
@@ -49,11 +49,11 @@ class RuleSelect extends Component {
       <FormControl>
         <Select
           native
-          value={this.state.value}
-          onChange={this.onChange}
+          value={ this.state.value }
+          onChange={ this.onChange }
         >
           <option></option>
-          {options}
+          { options }
         </Select>
       </FormControl>
     );

@@ -14,7 +14,7 @@ class App extends Component {
     }
 
     ZgifApi.fetchRulesets()
-      .then(rulesets => this.setState({rulesets}));
+      .then(rulesets => this.setState({ rulesets }));
   }
 
   componentDidMount() {
@@ -23,7 +23,7 @@ class App extends Component {
 
   onRulesetChange = (rulesetId) => {
     (rulesetId ? ZgifApi.fetchRuleset(rulesetId) : Promise.resolve())
-      .then(ruleset => this.setState({ruleset}))
+      .then(ruleset => this.setState({ ruleset }))
     ;
   }
 
@@ -32,9 +32,9 @@ class App extends Component {
       <div className="App">
         <CssBaseline />
         <AppHeader />
-        <Main rulesets={this.state.rulesets}
-              ruleset={this.state.ruleset}
-              onRulesetChange={this.onRulesetChange} />
+        <Main rulesets={ this.state.rulesets }
+              ruleset={ this.state.ruleset }
+              onRulesetChange={ this.onRulesetChange } />
       </div>
     );
   }

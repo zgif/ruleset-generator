@@ -18,11 +18,11 @@ class Entity extends Component {
   }
 
   onAddFieldClick = () => {
-    this.setState({addingField: true});
+    this.setState({ addingField: true });
   }
 
   onAddFieldDialogClose = (fieldName) => {
-    this.setState({addingField: false});
+    this.setState({ addingField: false });
 
     if (fieldName) {
       // add field
@@ -30,11 +30,11 @@ class Entity extends Component {
   }
 
   onAddEntityClick = () => {
-    this.setState({addingEntity: true});
+    this.setState({ addingEntity: true });
   }
 
   onAddEntityDialogClose = (entityName) => {
-    this.setState({addingEntity: false});
+    this.setState({ addingEntity: false });
 
     if (entityName) {
       // add field
@@ -43,29 +43,29 @@ class Entity extends Component {
 
   render() {
     return (
-      <Card elevation={1} component="article">
+      <Card elevation={ 1 } component="article">
         <CardContent>
-          <EntityHeader {...this.props} />
-          <FieldList fields={this.props.fields} />
-          <EntityList entities={this.props.entities} />
+          <EntityHeader { ...this.props } />
+          <FieldList fields={ this.props.fields } />
+          <EntityList entities={ this.props.entities } />
         </CardContent>
         <CardActions>
-          <Button size="small" color="secondary" onClick={this.onAddFieldClick}>
-            {addField}
+          <Button size="small" color="secondary" onClick={ this.onAddFieldClick }>
+            { addField }
           </Button>
-          <Button size="small" color="secondary" onClick={this.onAddEntityClick}>
-            {addEntity}
+          <Button size="small" color="secondary" onClick={ this.onAddEntityClick }>
+            { addEntity }
           </Button>
         </CardActions>
   
-        <AddFieldDialog entityName={this.props.name}
-                        open={this.state.addingField}
-                        onClose={this.onAddFieldDialogClose}
-                        currentFields={this.props.fields} />
-        <AddEntityDialog entityName={this.props.name}
-                         open={this.state.addingEntity}
-                         onClose={this.onAddEntityDialogClose}
-                         currentEntities={this.props.entities}/>
+        <AddFieldDialog entityName={ this.props.name }
+                        open={ this.state.addingField }
+                        onClose={ this.onAddFieldDialogClose }
+                        currentFields={ this.props.fields } />
+        <AddEntityDialog entityName={ this.props.name }
+                         open={ this.state.addingEntity }
+                         onClose={ this.onAddEntityDialogClose }
+                         currentEntities={ this.props.entities }/>
       </Card>
     );
   }

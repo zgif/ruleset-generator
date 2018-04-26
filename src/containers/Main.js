@@ -9,27 +9,27 @@ import './Main.css';
 class Main extends Component {
   render() {
     const baseRulesetSelect = this.props.rulesets && (
-      <BaseRulesetSelect rulesets={this.props.rulesets}
-                         defaultValue={this.props.ruleset && this.props.ruleset.id}
-                         onChange={this.props.onRulesetChange}/>
+      <BaseRulesetSelect rulesets={ this.props.rulesets }
+                         defaultValue={ this.props.ruleset && this.props.ruleset.id }
+                         onChange={ this.props.onRulesetChange }/>
     );
 
     const rulesetFormGrid = this.props.ruleset && (
-      <Grid item xs={12}>
-        <RulesetForm ruleset={this.props.ruleset} />
+      <Grid item xs={ 12 }>
+        <RulesetForm ruleset={ this.props.ruleset } />
       </Grid>
     );
 
     return (
       <Grid container justify="center" className="Main" component="main">
-        <Grid item xs={12}>
+        <Grid item xs={ 12 }>
           <Typography paragraph>
-            {appDescription}
+            { appDescription }
           </Typography>
-          {baseRulesetSelect}
+          { baseRulesetSelect }
         </Grid>
         
-        {rulesetFormGrid}
+        { rulesetFormGrid }
       </Grid>
     );
   }

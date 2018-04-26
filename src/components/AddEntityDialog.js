@@ -9,12 +9,12 @@ class AddEntityDialog extends Component {
 
     return (
       <AddItemDialog
-        onClose={onClose}
-        open={open}
-        fetchOptions={this.fetchOptions}
-        unavailableOptions={this.getUnavailableOptions()}
-        title={addEntityTo(this.props.entityName)}
-        addButtonText={addEntity}
+        onClose={ onClose }
+        open={ open }
+        fetchOptions={ this.fetchOptions }
+        unavailableOptions={ this.getUnavailableOptions()}
+        title={ addEntityTo(this.props.entityName)}
+        addButtonText={ addEntity }
         />
     );
   }

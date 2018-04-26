@@ -17,18 +17,18 @@ class AddItemDialog extends Component {
         !this.props.unavailableOptions.includes(option)
       )))
       .then(options => options.map(option => {
-        return {label: option, value: option}
+        return { label: option, value: option }
       }))
-      .then(options => this.setState({options}))
+      .then(options => this.setState({ options }))
     ;
   }
 
   onExited = () => {
-    this.setState({value: ''});
+    this.setState({ value: ''});
   }
 
   onSelectChange = (option) => {
-    this.setState({value: option && option.value});
+    this.setState({ value: option && option.value });
   }
 
   onCancelClick = () => {
@@ -43,28 +43,28 @@ class AddItemDialog extends Component {
     return (
       <Dialog
         maxWidth="xs"
-        open={this.props.open}
-        onEntered={this.onEntered}
-        onExited={this.onExited}
-        PaperProps={{style: {overflowY: 'visible'}}}
+        open={ this.props.open }
+        onEntered={ this.onEntered }
+        onExited={ this.onExited }
+        PaperProps={{ style: { overflowY: 'visible'}}}
       >
-        <DialogTitle>{this.props.title}</DialogTitle>
+        <DialogTitle>{ this.props.title }</DialogTitle>
 
         <DialogContent
-          style={{overflowY: 'visible'}}
+          style={{ overflowY: 'visible'}}
           >
           <Select
-            value={this.state.value}
-            onChange={this.onSelectChange}
-            options={this.state.options}
-            isLoading={!this.state.options}
+            value={ this.state.value }
+            onChange={ this.onSelectChange }
+            options={ this.state.options }
+            isLoading={!this.state.options }
             autoFocus
             />
         </DialogContent>
 
         <DialogActions>
-          <Button onClick={this.onCancelClick} color="primary">{cancel}</Button>
-          <Button onClick={this.onAddClick} color="primary">{this.props.addButtonText}</Button>
+          <Button onClick={ this.onCancelClick } color="primary">{ cancel }</Button>
+          <Button onClick={ this.onAddClick } color="primary">{ this.props.addButtonText }</Button>
         </DialogActions>
       </Dialog>
     );
