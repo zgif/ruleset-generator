@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import Typography from 'material-ui/Typography';
-import { appTitle } from '../utils/Texts';
+import React, { Component } from 'react'
+import AppBar from 'material-ui/AppBar'
+import Toolbar from 'material-ui/Toolbar'
+import Typography from 'material-ui/Typography'
+import { appTitle } from '../utils/Texts'
 
 class AppHeader extends Component {
   render() {
@@ -14,8 +14,8 @@ class AppHeader extends Component {
           </Typography>
         </Toolbar>
       </AppBar>
-    );
+    )
   }
 }
 
-export default AppHeader;
+export default AppHeader

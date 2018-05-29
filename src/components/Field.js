@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import RuleSelect from './RuleSelect';
-import Grid from 'material-ui/Grid';
-import './Field.css';
+import React, { Component } from 'react'
+import RuleSelect from './RuleSelect'
+import Grid from 'material-ui/Grid'
+import './Field.css'
 
 class Field extends Component {
   render() {
@@ -14,8 +14,8 @@ class Field extends Component {
           <RuleSelect defaultValue={ this.props.usage } />
         </Grid>
       </Grid>
-    );
+    )
   }
 }
 
-export default Field;
+export default Field

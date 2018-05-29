@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Select from 'material-ui/Select';
-import { FormControl } from 'material-ui/Form';
-import { usageOptions as usageOptionTexts } from '../utils/Texts.js';
+import React, { Component } from 'react'
+import Select from 'material-ui/Select'
+import { FormControl } from 'material-ui/Form'
+import { usageOptions as usageOptionTexts } from '../utils/Texts.js'
 
 const usageOptions = [
   {
@@ -18,14 +18,14 @@ const usageOptions = [
     value: 'optional',
     text: usageOptionTexts.optional
   }
-];
+]
 
 class RuleSelect extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       value: this.props.defaultValue || ''
-    };
+    }
   }
 
   renderOptions() {
@@ -33,17 +33,17 @@ class RuleSelect extends Component {
       <option key={ option.value } value={ option.value }>
         { option.text }
       </option>
-    ));
+    ))
   }
 
   onChange = (event) => {
     this.setState({
       value: event.currentTarget.value
-    });
+    })
   }
 
   render() {
-    const options = this.renderOptions();
+    const options = this.renderOptions()
 
     return (
       <FormControl>
@@ -56,8 +56,8 @@ class RuleSelect extends Component {
           { options }
         </Select>
       </FormControl>
-    );
+    )
   }
 }
 
-export default RuleSelect;
+export default RuleSelect

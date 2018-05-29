@@ -1,30 +1,30 @@
-import React, { Component } from 'react';
-import AppHeader from './AppHeader';
-import Main from './Main';
-import CssBaseline from 'material-ui/CssBaseline';
-import { appTitle } from '../utils/Texts';
-import ZgifApi from '../utils/ZgifApi';
+import React, { Component } from 'react'
+import AppHeader from './AppHeader'
+import Main from './Main'
+import CssBaseline from 'material-ui/CssBaseline'
+import { appTitle } from '../utils/Texts'
+import ZgifApi from '../utils/ZgifApi'
 
 class App extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       rulesets: [],
       ruleset: null
     }
 
     ZgifApi.fetchRulesets()
-      .then(rulesets => this.setState({ rulesets }));
+      .then(rulesets => this.setState({ rulesets }))
   }
 
   componentDidMount() {
-    document.title = appTitle;
+    document.title = appTitle
   }
 
   onRulesetChange = (rulesetUrl) => {
     (rulesetUrl ? ZgifApi.fetchRuleset(rulesetUrl) : Promise.resolve())
       .then(ruleset => this.setState({ ruleset }))
-    ;
+    
   }
 
   render() {
@@ -36,8 +36,8 @@ class App extends Component {
               ruleset={ this.state.ruleset }
               onRulesetChange={ this.onRulesetChange } />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

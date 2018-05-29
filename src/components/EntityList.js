@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Entity from './Entity';
-import List, { ListItem, ListItemText } from 'material-ui/List';
+import React, { Component } from 'react'
+import Entity from './Entity'
+import List, { ListItem, ListItemText } from 'material-ui/List'
 
 class EntityList extends Component {
   render() {
@@ -14,8 +14,8 @@ class EntityList extends Component {
           </ListItem>
         ))}
       </List>
-    );
+    )
   }
 }
 
-export default EntityList;
+export default EntityList

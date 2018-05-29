@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Select from 'material-ui/Select';
-import { InputLabel } from 'material-ui/Input';
-import { FormControl } from 'material-ui/Form';
-import { baseRuleset } from '../utils/Texts';
+import React, { Component } from 'react'
+import Select from 'material-ui/Select'
+import { InputLabel } from 'material-ui/Input'
+import { FormControl } from 'material-ui/Form'
+import { baseRuleset } from '../utils/Texts'
 
 class BaseRulesetSelect extends Component {
   constructor(props) {
@@ -17,18 +17,18 @@ class BaseRulesetSelect extends Component {
       <option key={ ruleset.url } value={ ruleset.url }>
         { ruleset.name }
       </option>
-    ));
+    ))
   }
 
   onChange = (event) => {
-    const value = event.currentTarget.value;
+    const value = event.currentTarget.value
 
-    this.setState({ value });
-    this.props.onChange(value);
+    this.setState({ value })
+    this.props.onChange(value)
   }
 
   render() {
-    const options = this.renderOptions();
+    const options = this.renderOptions()
 
     return (
       <FormControl>
@@ -48,8 +48,8 @@ class BaseRulesetSelect extends Component {
           { options }
         </Select>
       </FormControl>
-    );
+    )
   }
 }
 
-export default BaseRulesetSelect;
+export default BaseRulesetSelect

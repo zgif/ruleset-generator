@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import Button from 'material-ui/Button';
-import Dialog, { DialogActions, DialogContent, DialogTitle } from 'material-ui/Dialog';
-import { cancel } from '../utils/Texts.js';
-import Select from 'react-select';
-import 'react-select/dist/react-select.css';
+import React, { Component } from 'react'
+import Button from 'material-ui/Button'
+import Dialog, { DialogActions, DialogContent, DialogTitle } from 'material-ui/Dialog'
+import { cancel } from '../utils/Texts.js'
+import Select from 'react-select'
+import 'react-select/dist/react-select.css'
 
 class AddItemDialog extends Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
 
   onEntered = () => {
@@ -20,23 +20,23 @@ class AddItemDialog extends Component {
         return { label: option, value: option }
       }))
       .then(options => this.setState({ options }))
-    ;
+    
   }
 
   onExited = () => {
-    this.setState({ value: ''});
+    this.setState({ value: ''})
   }
 
   onSelectChange = (option) => {
-    this.setState({ value: option && option.value });
+    this.setState({ value: option && option.value })
   }
 
   onCancelClick = () => {
-    this.props.onClose();
+    this.props.onClose()
   }
 
   onAddClick = () => {
-    this.props.onClose(this.state.value);
+    this.props.onClose(this.state.value)
   }
 
   render() {
@@ -67,8 +67,8 @@ class AddItemDialog extends Component {
           <Button onClick={ this.onAddClick } color="primary">{ this.props.addButtonText }</Button>
         </DialogActions>
       </Dialog>
-    );
+    )
   }
 }
 
-export default AddItemDialog;
+export default AddItemDialog

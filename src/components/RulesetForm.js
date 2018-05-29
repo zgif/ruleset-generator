@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import EntityList from './EntityList';
-import Button from 'material-ui/Button';
-import { generateRuleset } from '../utils/Texts';
+import React, { Component } from 'react'
+import EntityList from './EntityList'
+import Button from 'material-ui/Button'
+import { generateRuleset } from '../utils/Texts'
 
 class RulesetForm extends Component {
   onSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault()
   }
 
   render() {
@@ -16,8 +16,8 @@ class RulesetForm extends Component {
           { generateRuleset }
         </Button>
       </form>
-    );
+    )
   }
 }
 
-export default RulesetForm;
+export default RulesetForm

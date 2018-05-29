@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Typography from 'material-ui/Typography';
-import Grid from 'material-ui/Grid';
-import RuleSelect from './RuleSelect';
+import React, { Component } from 'react'
+import Typography from 'material-ui/Typography'
+import Grid from 'material-ui/Grid'
+import RuleSelect from './RuleSelect'
 import './EntityHeader.css'
 
 class EntityHeader extends Component {
@@ -19,8 +19,8 @@ class EntityHeader extends Component {
           </Grid>
         </Grid>
       </header>
-    );
+    )
   }
 }
 
-export default EntityHeader;
+export default EntityHeader

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Field from './Field';
-import List, { ListItem, ListItemText } from 'material-ui/List';
+import React, { Component } from 'react'
+import Field from './Field'
+import List, { ListItem, ListItemText } from 'material-ui/List'
 
 class FieldList extends Component {
   render() {
@@ -14,8 +14,8 @@ class FieldList extends Component {
           </ListItem>
         ))}
       </List>
-    );
+    )
   }
 }
 
-export default FieldList;
+export default FieldList

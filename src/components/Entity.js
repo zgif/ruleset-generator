@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import FieldList from './FieldList';
-import EntityList from './EntityList';
-import Card, { CardActions, CardContent } from 'material-ui/Card';
-import Button from 'material-ui/Button';
-import EntityHeader from './EntityHeader';
-import { addField, addEntity } from '../utils/Texts';
-import AddFieldDialog from './AddFieldDialog';
-import AddEntityDialog from './AddEntityDialog';
+import React, { Component } from 'react'
+import FieldList from './FieldList'
+import EntityList from './EntityList'
+import Card, { CardActions, CardContent } from 'material-ui/Card'
+import Button from 'material-ui/Button'
+import EntityHeader from './EntityHeader'
+import { addField, addEntity } from '../utils/Texts'
+import AddFieldDialog from './AddFieldDialog'
+import AddEntityDialog from './AddEntityDialog'
 
 class Entity extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       addingField: false,
       addingEntity: false
@@ -18,11 +18,11 @@ class Entity extends Component {
   }
 
   onAddFieldClick = () => {
-    this.setState({ addingField: true });
+    this.setState({ addingField: true })
   }
 
   onAddFieldDialogClose = (fieldName) => {
-    this.setState({ addingField: false });
+    this.setState({ addingField: false })
 
     if (fieldName) {
       // add field
@@ -30,11 +30,11 @@ class Entity extends Component {
   }
 
   onAddEntityClick = () => {
-    this.setState({ addingEntity: true });
+    this.setState({ addingEntity: true })
   }
 
   onAddEntityDialogClose = (entityName) => {
-    this.setState({ addingEntity: false });
+    this.setState({ addingEntity: false })
 
     if (entityName) {
       // add field
@@ -67,8 +67,8 @@ class Entity extends Component {
                          onClose={ this.onAddEntityDialogClose }
                          currentEntities={ this.props.entities }/>
       </Card>
-    );
+    )
   }
 }
 
-export default Entity;
+export default Entity
