@@ -16,7 +16,8 @@ class Main extends Component {
 
     const rulesetFormGrid = this.props.ruleset && (
       <Grid item xs={ 12 }>
-        <RulesetForm ruleset={ this.props.ruleset } />
+        <RulesetForm rootEntities={ this.props.ruleset.entities }
+                     rootFields={ this.props.ruleset.fields || [] } />
       </Grid>
     )
 
