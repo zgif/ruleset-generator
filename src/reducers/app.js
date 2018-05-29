@@ -6,7 +6,7 @@ const initialState = {
   rootRulePaths: []
 }
 
-export function app(state = initialState, action) {
+export default function app(state = initialState, action) {
   return {
     ...state,
     rules: rules(state.rules, action)
