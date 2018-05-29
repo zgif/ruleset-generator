@@ -16,6 +16,7 @@
 * I18n: en/de
 * Mobile optimized
 * Make the entities collapsible and collapse all of them initially by default
+* Allow the addition/removal of root entities and fields (not in the mocked design but maybe wanted)
 
 ## UX
 
