@@ -8,6 +8,8 @@
     - when opening the add item dialog, the data fetched from the previous entity is still displayed
 3. Update view once add item dialogs close (probably a piece of cake after having 2)
 4. Connect to the live API
+5. Test in multiple browsers?
+6. Replace the select by URL (spec change)
 
 # Future
 
