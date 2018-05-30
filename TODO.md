@@ -1,8 +1,13 @@
+# Next
+
+- commit
+- rename entity to entityrule, field to fieldrule, lists etc
+- implement download
+    - reverseparse
+
+
 # Essentials
 
-1. Decide how to update original object sent and decomposed via props (state?, redux?)
-    * https://redux.js.org/introduction/examples
-    * http://jamesknelson.com/learn-raw-react-ridiculously-simple-forms/?
 2. Fix some component state being kept - probably get fixed by the solution of item 2
     - some values are not being replaced by empty (e.g. select is not, ruleset changes and the select should be empty but it's still "not")
     - when opening the add item dialog, the data fetched from the previous entity is still displayed
@@ -10,6 +15,8 @@
 4. Connect to the live API
 5. Test in multiple browsers?
 6. Replace the select by URL (spec change)
+7. Fix font-face in the dialogs
+8. Fix console warnings
 
 # Future
 
@@ -35,6 +42,7 @@
 * Cache fetched entities for faster adding of fields
 * Improve naming: entities/fields -> entityNames/fieldNames (to distinguish between the fieldNames and fieldNames + usage)
 * Reduce duplications in AddFieldDialog and AddEntityDialog
+* Add tests (with enzyme?)
 
 ## Eye candy
 
