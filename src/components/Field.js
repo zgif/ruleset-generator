@@ -8,10 +8,10 @@ class Field extends Component {
     return (
       <Grid container component="label">
         <Grid item xs={ 6 } className="Field__Name">
-          { this.props.name }
+          { this.props.objectName }
         </Grid>
         <Grid item xs={ 6 }>
-          <RuleSelect defaultValue={ this.props.usage } />
+          <RuleSelect defaultValue={ this.props.value } />
         </Grid>
       </Grid>
     )

@@ -11,11 +11,11 @@ class EntityHeader extends Component {
         <Grid container component="label">
           <Grid item xs={ 6 }>
             <Typography component="h1" variant="title">
-              { this.props.name }
+              { this.props.objectName }
             </Typography>
           </Grid>
           <Grid item xs={ 6 }>
-            <RuleSelect defaultValue={ this.props.usage }/>
+            <RuleSelect defaultValue={ this.props.value }/>
           </Grid>
         </Grid>
       </header>

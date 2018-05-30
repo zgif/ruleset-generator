@@ -5,17 +5,17 @@ import { usageOptions as usageOptionTexts } from '../utils/Texts.js'
 
 const usageOptions = [
   {
-    value: 'core',
+    value: 'CORE',
     text: usageOptionTexts.core
   },
 
   {
-    value: 'not',
+    value: 'NOT',
     text: usageOptionTexts.not
   },
 
   {
-    value: 'optional',
+    value: 'OPTIONAL',
     text: usageOptionTexts.optional
   }
 ]
