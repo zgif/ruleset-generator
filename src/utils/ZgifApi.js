@@ -25,12 +25,58 @@ export function fetchRulesets() {
   return fetchJson('rulesets_live', API_MODE.mocked)
 }
 
-export function fetchRuleset(url) {
-  if (CURRENT_API_MODE === API_MODE.mocked) {
-    return fetchJson(`rulesets/${ url }`)
+function getRulesByPath(rules) {
+  const rulesByPath = {}
+
+  rules.forEach(rule => {
+    const parentPath = rule.objectParents.join(',') || null
+    const path = parentPath
+      ? [parentPath, rule.objectName].join(',')
+      : rule.objectName
+
+    // Indexing
+    rulesByPath[path] = {
+      ...rule,
+      path,
+      parentPath,
+      childPaths: []
+    }
+  })
+
+  return rulesByPath
+}
+
+function parseRuleset(ruleset) {
+  const rulesByPath = getRulesByPath(ruleset.rules)
+  const rootRulePaths = []
+
+  // Adding tree references
+  for (const path in rulesByPath) {
+    const rule = rulesByPath[path]
+
+    if (!rule.parentPath) {
+      rootRulePaths.push(path);
+      continue;
+    }
+
+    const parentRule = rulesByPath[rule.parentPath];
+
+    parentRule.childPaths.push(rule.path)
   }
 
-  return fetchJson(`ruleset/?ruleset_by_url=${ encodeURI(url) }`)
+  return {
+    rulesByPath,
+    rootRulePaths
+  };
+}
+
+export function fetchRuleset(url) {
+  const fetchRuleset = CURRENT_API_MODE === API_MODE.mocked
+    ? fetchJson(`rulesets/${ url }`)
+    : fetchJson(`ruleset/?ruleset_by_url=${ encodeURI(url) }`)
+
+  return fetchRuleset
+    .then((ruleset) => parseRuleset(ruleset))
 }
 
 export function fetchEntity(name) {
