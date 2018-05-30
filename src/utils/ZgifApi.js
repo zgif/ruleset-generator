@@ -39,7 +39,10 @@ function getRulesByPath(rules) {
       ...rule,
       path,
       parentPath,
-      childPaths: []
+      childPaths: {
+        entity: [],
+        field: []
+      }
     }
   })
 
@@ -48,20 +51,23 @@ function getRulesByPath(rules) {
 
 function parseRuleset(ruleset) {
   const rulesByPath = getRulesByPath(ruleset.rules)
-  const rootRulePaths = []
+  const rootRulePaths = {
+    entity: [],
+    field: []
+  }
 
   // Adding tree references
   for (const path in rulesByPath) {
     const rule = rulesByPath[path]
 
     if (!rule.parentPath) {
-      rootRulePaths.push(path);
+      rootRulePaths[rule.objectType].push(path);
       continue;
     }
 
     const parentRule = rulesByPath[rule.parentPath];
 
-    parentRule.childPaths.push(rule.path)
+    parentRule.childPaths[rule.objectType].push(rule.path)
   }
 
   return {

@@ -1,14 +1,13 @@
 import RulesetForm from '../components/RulesetForm'
 import { connect } from 'react-redux'
-
-const getRules = (state, paths) => {
-  return paths.map(path => state.rulesByPath[path])
-}
+import { getRootRules } from '../utils/Store'
 
 const mapStateToProps = state => {
+  const { activeRuleset } = state
+
   return {
-    rootEntities: getRules(state, state.rootEntityPaths),
-    rootFields: getRules(state, state.rootFieldPaths)
+    rootEntities: getRootRules(activeRuleset, 'entity'),
+    rootFields: getRootRules(activeRuleset, 'field')
   }
 }
 

@@ -1,14 +1,6 @@
-import rules from './rules'
+import activeRuleset from './activeRuleset'
+import { combineReducers } from 'redux'
 
-const initialState = {
-  rules: [],
-  rulesByPath: {},
-  rootRulePaths: []
-}
-
-export default function app(state = initialState, action) {
-  return {
-    ...state,
-    rules: rules(state.rules, action)
-  }
-}
+export default combineReducers({
+  activeRuleset
+})

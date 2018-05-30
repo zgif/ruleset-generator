@@ -1,6 +1,6 @@
 import { ADD_RULE, CHANGE_RULE_VALUE } from '../actions/types'
 
-export default function rules(state = [], action) {
+export default function (state = [], action) {
   switch (action.type) {
   case ADD_RULE:
     return [
