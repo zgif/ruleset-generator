@@ -5,16 +5,18 @@ import { cancel } from '../utils/Texts.js'
 import Select from 'react-select'
 import 'react-select/dist/react-select.css'
 
-class AddItemDialog extends Component {
+class AddRuleDialog extends Component {
   constructor(props) {
     super(props)
+
     this.state = {}
+    this.unavailableOptions = props.unavailableRules.map(rule => rule.objectName)
   }
 
   onEntered = () => {
     this.props.fetchOptions()
       .then(options => options.filter(option => (
-        !this.props.unavailableOptions.includes(option)
+        !this.unavailableOptions.includes(option)
       )))
       .then(options => options.map(option => {
         return { label: option, value: option }
@@ -71,4 +73,4 @@ class AddItemDialog extends Component {
   }
 }
 
-export default AddItemDialog
+export default AddRuleDialog

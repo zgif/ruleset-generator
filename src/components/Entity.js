@@ -5,8 +5,8 @@ import Card, { CardActions, CardContent } from 'material-ui/Card'
 import Button from 'material-ui/Button'
 import EntityHeader from './EntityHeader'
 import { addField, addEntity } from '../utils/Texts'
-import AddFieldDialog from './AddFieldDialog'
-import AddEntityDialog from './AddEntityDialog'
+import AddFieldRuleDialog from './AddFieldRuleDialog'
+import AddEntityRuleDialog from './AddEntityRuleDialog'
 
 class Entity extends Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class Entity extends Component {
     this.setState({ addingField: true })
   }
 
-  onAddFieldDialogClose = (fieldName) => {
+  onAddFieldRuleDialogClose = (fieldName) => {
     this.setState({ addingField: false })
 
     if (fieldName) {
@@ -33,7 +33,7 @@ class Entity extends Component {
     this.setState({ addingEntity: true })
   }
 
-  onAddEntityDialogClose = (entityName) => {
+  onAddEntityRuleDialogClose = (entityName) => {
     this.setState({ addingEntity: false })
 
     if (entityName) {
@@ -58,14 +58,14 @@ class Entity extends Component {
           </Button>
         </CardActions>
   
-        <AddFieldDialog entityName={ this.props.objectName }
-                        open={ this.state.addingField }
-                        onClose={ this.onAddFieldDialogClose }
-                        currentFields={ this.props.fields } />
-        <AddEntityDialog entityName={ this.props.objectName }
-                         open={ this.state.addingEntity }
-                         onClose={ this.onAddEntityDialogClose }
-                         currentEntities={ this.props.entities }/>
+        <AddFieldRuleDialog parentRuleName={ this.props.objectName }
+                            open={ this.state.addingField }
+                            onClose={ this.onAddFieldRuleDialogClose }
+                            unavailableRules={ this.props.fields } />
+        <AddEntityRuleDialog parentRuleName={ this.props.objectName }
+                             open={ this.state.addingEntity }
+                             onClose={ this.onAddEntityRuleDialogClose }
+                             unavailableRules={ this.props.entities }/>
       </Card>
     )
   }
