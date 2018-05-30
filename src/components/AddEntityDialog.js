@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import AddItemDialog from './AddItemDialog'
-import ZgifApi from '../utils/ZgifApi'
+import { fetchEntity } from '../utils/ZgifApi'
 import { addEntity, addEntityTo } from '../utils/Texts.js'
 
 class AddEntityDialog extends Component {
@@ -20,7 +20,7 @@ class AddEntityDialog extends Component {
   }
 
   fetchOptions = () => {
-    return ZgifApi.fetchEntity(this.props.entityName)
+    return fetchEntity(this.props.entityName)
       .then(entity => entity.entities.map(entity => entity.name))
     
   }

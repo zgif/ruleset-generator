@@ -3,7 +3,7 @@ import AppHeader from './AppHeader'
 import Main from './Main'
 import CssBaseline from 'material-ui/CssBaseline'
 import { appTitle } from '../utils/Texts'
-import ZgifApi from '../utils/ZgifApi'
+import { fetchRulesets, fetchRuleset } from '../utils/ZgifApi'
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class App extends Component {
       ruleset: null
     }
 
-    ZgifApi.fetchRulesets()
+    fetchRulesets()
       .then(rulesets => this.setState({ rulesets }))
   }
 
@@ -22,9 +22,8 @@ class App extends Component {
   }
 
   onRulesetChange = (rulesetUrl) => {
-    (rulesetUrl ? ZgifApi.fetchRuleset(rulesetUrl) : Promise.resolve())
+    (rulesetUrl ? fetchRuleset(rulesetUrl) : Promise.resolve())
       .then(ruleset => this.setState({ ruleset }))
-    
   }
 
   render() {

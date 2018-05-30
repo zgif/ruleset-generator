@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import AddItemDialog from './AddItemDialog'
-import ZgifApi from '../utils/ZgifApi'
+import { fetchEntity } from '../utils/ZgifApi'
 import { addField, addFieldTo } from '../utils/Texts.js'
 
 class AddFieldDialog extends Component {
@@ -20,7 +20,7 @@ class AddFieldDialog extends Component {
   }
 
   fetchOptions = () => {
-    return ZgifApi.fetchEntity(this.props.entityName)
+    return fetchEntity(this.props.entityName)
       .then(entity => entity.fields)
     
   }
