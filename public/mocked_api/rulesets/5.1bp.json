@@ -1,36 +1,33 @@
 {
-    "id": "5.1bp",
-    "base": {
-        "id": "5.1m",
-        "name": "zgif - ruleset 5.1 (minimum)"
+  "meta": {
+  },
+  "rules": [
+    {
+      "xpath": "/data/LIST_OF_COMPANY/COMPANY",
+      "objectType": "entity",
+      "objectParents": [],
+      "objectName": "Company",
+      "ruleType": "basic",
+      "value": "OPTIONAL"
     },
-    "name": "zgif - ruleset 5.1 (best practice)",
-    "entities": [
-        {
-            "name": "Company",
-            "usage": "core",
-            "fields": [
-                {
-                    "name": "avgDebtTotalInterest",
-                    "usage": "core"
-                },
-                {
-                    "name": "avgFixedInterestPeriod",
-                    "usage": "not"
-                },
-                {
-                    "name": "avgFxForwardTotalTerm",
-                    "usage": "not"
-                }
-            ],
-            "entities": [
-                {
-                    "name": "PartnerLink",
-                    "usage": "optional",
-                    "fields": [],
-                    "entities": []
-                }
-            ]
-        }
-    ]
+    {
+      "xpath": "/data/LIST_OF_COMPANY/COMPANY[avgDebtTotalInterest]",
+      "objectType": "field",
+      "objectParents": [
+        "Company"
+      ],
+      "objectName": "Avgdebttotalinterest",
+      "ruleType": "basic",
+      "value": "CORE"
+    },
+    {
+      "xpath": "/data/LIST_OF_COMPANY/COMPANY[avgDebtTotalInterest]",
+      "objectType": "field",
+      "objectParents": [
+      ],
+      "objectName": "Avgdebttotalinterest",
+      "ruleType": "basic",
+      "value": "CORE"
+    }
+  ]
 }

@@ -1,25 +1,14 @@
 {
-    "id": "5.1m",
-    "base": null,
-    "name": "zgif - ruleset 5.1 (minimum)",
-    "entities": [
-        {
-            "name": "Company",
-            "usage": "core",
-            "fields": [
-                {
-                    "name": "avgDebtTotalInterest",
-                    "usage": "core"
-                },
-                {
-                    "name": "avgFixedInterestPeriod",
-                    "usage": "not"
-                },
-                {
-                    "name": "avgFxForwardTotalTerm"
-                }
-            ],
-            "entities": []
-        }
-    ]
+  "meta": {
+  },
+  "rules": [
+    {
+      "xpath": "/data/LIST_OF_COMPANY/COMPANY",
+      "objectType": "entity",
+      "objectParents": [],
+      "objectName": "Company",
+      "ruleType": "basic",
+      "value": "OPTIONAL"
+    }
+  ]
 }
