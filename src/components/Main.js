@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import BaseRulesetSelect from '../components/BaseRulesetSelect'
-import RulesetForm from '../components/RulesetForm'
+import ActiveRulesetForm from '../containers/ActiveRulesetForm'
 import Typography from 'material-ui/Typography'
 import Grid from 'material-ui/Grid'
 import { appDescription } from '../utils/Texts'
@@ -16,8 +16,7 @@ class Main extends Component {
 
     const rulesetFormGrid = this.props.ruleset && (
       <Grid item xs={ 12 }>
-        <RulesetForm rootEntities={ this.props.ruleset.entities }
-                     rootFields={ this.props.ruleset.fields || [] } />
+        <ActiveRulesetForm />
       </Grid>
     )
 

@@ -4,6 +4,7 @@ import Main from './Main'
 import CssBaseline from 'material-ui/CssBaseline'
 import { appTitle } from '../utils/Texts'
 import { fetchRulesets, fetchRuleset } from '../utils/ZgifApi'
+import updateActiveRuleset from '../actions/updateActiveRuleset'
 
 class App extends Component {
   constructor(props) {
@@ -23,7 +24,10 @@ class App extends Component {
 
   onRulesetChange = (rulesetUrl) => {
     (rulesetUrl ? fetchRuleset(rulesetUrl) : Promise.resolve())
-      .then(ruleset => this.setState({ ruleset }))
+      .then(ruleset => {
+        this.setState({ ruleset })
+        this.props.dispatch(updateActiveRuleset(ruleset ? ruleset : {}));
+      })
   }
 
   render() {

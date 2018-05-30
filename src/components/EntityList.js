@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Entity from './Entity'
+import ConnectedEntity from '../containers/ConnectedEntity'
 import List, { ListItem, ListItemText } from 'material-ui/List'
 
 class EntityList extends Component {
@@ -9,7 +9,7 @@ class EntityList extends Component {
         { this.props.entities.map(entity => (
           <ListItem key={ entity.name } disableGutters>
             <ListItemText>
-              <Entity { ...entity } />
+              <ConnectedEntity { ...entity } />
             </ListItemText>
           </ListItem>
         ))}
