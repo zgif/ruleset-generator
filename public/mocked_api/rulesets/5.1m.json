@@ -1,14 +1,101 @@
+
 {
-  "meta": {
-  },
-  "rules": [
-    {
-      "xpath": "/data/LIST_OF_COMPANY/COMPANY",
-      "objectType": "entity",
-      "objectParents": [],
-      "objectName": "Company",
-      "ruleType": "basic",
-      "value": "OPTIONAL"
-    }
-  ]
+    "meta": {
+        "name": "dummy",
+        "parent": null
+    },
+    "rules": [
+        {
+            "xpath": "\/data\/LIST_OF_COMPANY\/COMPANY\/LIST_OF_ACCOUNT\/ACCOUNT",
+            "objectType": "entity",
+            "objectParents": [
+                "Company"
+            ],
+            "objectName": "Account",
+            "ruleType": "basic",
+            "value": "CORE"
+        },
+        {
+            "xpath": "\/data\/LIST_OF_COMPANY\/COMPANY\/LIST_OF_PROPERTY\/PROPERTY",
+            "objectType": "entity",
+            "objectParents": [
+                "Company"
+            ],
+            "objectName": "Property",
+            "ruleType": "basic",
+            "value": "OPTIONAL"
+        },
+        {
+            "xpath": "\/data\/LIST_OF_COMPANY\/COMPANY\/LIST_OF_SUB_COMPANY\/SUB_COMPANY",
+            "objectType": "entity",
+            "objectParents": [
+                "Company"
+            ],
+            "objectName": "SubCompany",
+            "ruleType": "basic",
+            "value": "NOT"
+        },
+        {
+            "xpath": "\/data\/LIST_OF_COMPANY\/COMPANY",
+            "objectType": "entity",
+            "objectParents": [],
+            "objectName": "Company",
+            "ruleType": "basic",
+            "value": "OPTIONAL"
+        },
+        {
+            "xpath": "\/data\/LIST_OF_COMPANY\/COMPANY\/LIST_OF_PROPERTY\/PROPERTY\/LIST_OF_ACCOUNT\/ACCOUNT",
+            "objectType": "entity",
+            "objectParents": [
+                "Company",
+                "Property"
+            ],
+            "objectName": "Account",
+            "ruleType": "basic",
+            "value": "CORE"
+        },
+        {
+            "xpath": "\/data\/LIST_OF_COMPANY\/COMPANY\/LIST_OF_ACCOUNT\/ACCOUNT[accountingStandard]",
+            "objectType": "field",
+            "objectParents": [
+                "Company",
+                "Account"
+            ],
+            "objectName": "Accountingstandard",
+            "ruleType": "basic",
+            "value": "CORE"
+        },
+        {
+            "xpath": "\/data\/LIST_OF_COMPANY\/COMPANY[avgDebtTotalInterest]",
+            "objectType": "field",
+            "objectParents": [
+                "Company"
+            ],
+            "objectName": "Avgdebttotalinterest",
+            "ruleType": "basic",
+            "value": "CORE"
+        },
+        {
+            "xpath": "\/data\/LIST_OF_COMPANY\/COMPANY\/LIST_OF_ACCOUNT\/ACCOUNT[balancePosition]",
+            "objectType": "field",
+            "objectParents": [
+                "Company",
+                "Account"
+            ],
+            "objectName": "Balanceposition",
+            "ruleType": "basic",
+            "value": "OPTIONAL"
+        },
+        {
+            "xpath": "\/data\/LIST_OF_COMPANY\/COMPANY\/LIST_OF_ACCOUNT\/ACCOUNT[value]",
+            "objectType": "field",
+            "objectParents": [
+                "Company",
+                "Account"
+            ],
+            "objectName": "Value",
+            "ruleType": "basic",
+            "value": "NOT"
+        }
+    ]
 }
