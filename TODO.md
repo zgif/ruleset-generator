@@ -1,7 +1,5 @@
 # Next
 
-- commit
-- rename entity to entityrule, field to fieldrule, lists etc
 - implement download
     - reverseparse
 
@@ -43,6 +41,7 @@
 * Improve naming: entities/fields -> entityNames/fieldNames (to distinguish between the fieldNames and fieldNames + usage)
 * Reduce duplications in AddFieldDialog and AddEntityDialog
 * Add tests (with enzyme?)
+* Restructure CSS according to best practices
 
 ## Eye candy
 
