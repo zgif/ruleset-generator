@@ -1,6 +1,6 @@
 import { CURRENT_API_MODE, API_MODE, API } from '../config'
 
-function getUrl(path, apiMode) {
+function getUrl(path, apiMode = CURRENT_API_MODE) {
   let url = `${ API.basePath[apiMode] }/${ path }`
 
   if (apiMode === API_MODE.mocked) {
@@ -10,7 +10,7 @@ function getUrl(path, apiMode) {
   return url
 }
 
-function fetchJson(path, apiMode = CURRENT_API_MODE) {
+function fetchJson(path, apiMode) {
   return fetch(getUrl(path, apiMode))
     .then(response => response.json())
   
