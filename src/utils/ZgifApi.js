@@ -49,7 +49,7 @@ function getRulesByPath(rules) {
   return rulesByPath
 }
 
-function parseRuleset(ruleset) {
+function parseRulesetFromApiFormat(ruleset) {
   const rulesByPath = getRulesByPath(ruleset.rules)
   const rootRulePaths = {
     entity: [],
@@ -82,9 +82,54 @@ export function fetchRuleset(url) {
     : fetchJson(`ruleset/?ruleset_by_url=${ encodeURI(url) }`)
 
   return fetchRuleset
-    .then((ruleset) => parseRuleset(ruleset))
+    .then((ruleset) => parseRulesetFromApiFormat(ruleset))
 }
 
 export function fetchEntity(name) {
   return fetchJson(`entities/${ name }`)
+}
+
+function parseRulesetToApiFormat(ruleset) {
+  const { rulesByPath } = ruleset
+  const rules = []
+
+  for (const path in rulesByPath) {
+    const rule = rulesByPath[path]
+
+    rules.push({
+      objectType: rule.objectType,
+      objectParents: rule.objectParents,
+      objectName: rule.objectName,
+      ruleType: rule.ruleType,
+      value: rule.value
+    })
+  }
+
+  return {
+    meta: {},
+    rules
+  };
+}
+
+function downloadData(data, filename) {
+  const a = document.createElement('a')
+  a.href = data
+  a.download = filename
+  a.click()
+}
+
+export function downloadRuleset(ruleset) {
+  const body = new FormData();
+
+  body.append(
+    'generate_ruleset',
+    JSON.stringify(parseRulesetToApiFormat(ruleset))
+  )
+
+  return fetch(getUrl('ruleset/'), {
+    method: 'POST',
+    body
+  })
+    .then(response => response.text())
+    .then(text => downloadData(text, 'ruleset.xsd'))
 }
