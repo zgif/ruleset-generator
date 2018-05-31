@@ -1,20 +1,19 @@
 # Next
 
-- implement download
-    - reverseparse
-
-
-# Essentials
-
-2. Fix some component state being kept - probably get fixed by the solution of item 2
+1. Update Redux store when selects change to make sure download has the view state
+2. Fix some component state being kept - probably get fixed by the solution of item 0
     - some values are not being replaced by empty (e.g. select is not, ruleset changes and the select should be empty but it's still "not")
     - when opening the add item dialog, the data fetched from the previous entity is still displayed
 3. Update view once add item dialogs close (probably a piece of cake after having 2)
-4. Connect to the live API
-5. Test in multiple browsers?
-6. Replace the select by URL (spec change)
-7. Fix font-face in the dialogs
-8. Fix console warnings
+4. Test in multiple browsers?
+5. Replace the select by URL (spec change)
+6. Fix font-face in the dialogs
+7. Fix console warnings
+8. Finish README so that zgif knows how to install it
+9. Document
+    a - It's not possible to download with the mocked API
+    b - It's not possible to use the live API locally unless CORS is disabled in your browser. On Chrome you can achieve that by using [this extension](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en).
+10. Send a message to Thomas and the zgif contributors delivering the project
 
 # Future
 
@@ -24,6 +23,7 @@
 * Mobile optimized
 * Make the entities collapsible and collapse all of them initially by default
 * Allow the addition/removal of root entities and fields (not in the mocked design but maybe wanted)
+* Make it officially compatible with browsers other than Chrome-stable
 
 ## UX
 
