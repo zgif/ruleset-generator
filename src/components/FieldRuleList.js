@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import Field from './Field'
+import FieldRule from './FieldRule'
 import List, { ListItem, ListItemText } from 'material-ui/List'
 
-class FieldList extends Component {
+class FieldRuleList extends Component {
   render() {
     return (
       <List>
-        { this.props.fields.map(field => (
-          <ListItem key={ field.name } disableGutters>
+        { this.props.rules.map(rule => (
+          <ListItem key={ rule.name } disableGutters>
             <ListItemText style={{ paddingRight: 0 }}>
-              <Field { ...field } />
+              <FieldRule { ...rule } />
             </ListItemText>
           </ListItem>
         ))}
@@ -18,4 +18,4 @@ class FieldList extends Component {
   }
 }
 
-export default FieldList
+export default FieldRuleList

@@ -1,4 +1,4 @@
-import Entity from '../components/Entity'
+import EntityRule from '../components/EntityRule'
 import { connect } from 'react-redux'
 import { getChildRules } from '../utils/Store'
 
@@ -6,8 +6,8 @@ const mapStateToProps = (state, ownProps) => {
   const { activeRuleset } = state
 
   return {
-    entities: getChildRules(activeRuleset, ownProps, 'entity'),
-    fields: getChildRules(activeRuleset, ownProps, 'field')
+    entityRules: getChildRules(activeRuleset, ownProps, 'entity'),
+    fieldRules: getChildRules(activeRuleset, ownProps, 'field')
   }
 }
 
@@ -19,4 +19,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Entity)
+)(EntityRule)

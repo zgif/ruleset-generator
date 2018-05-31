@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import RuleSelect from './RuleSelect'
 import Grid from 'material-ui/Grid'
-import './Field.css'
+import './FieldRule.css'
 
-class Field extends Component {
+class FieldRule extends Component {
   render() {
     return (
       <Grid container component="label">
-        <Grid item xs={ 6 } className="Field__Name">
+        <Grid item xs={ 6 } className="FieldRule__Name">
           { this.props.objectName }
         </Grid>
         <Grid item xs={ 6 }>
@@ -18,4 +18,4 @@ class Field extends Component {
   }
 }
 
-export default Field
+export default FieldRule

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import AddRuleDialog from './AddRuleDialog'
 import { fetchEntity } from '../utils/ZgifApi'
-import { addField, addFieldTo } from '../utils/Texts.js'
+import { addFieldRule, addFieldRuleTo } from '../utils/Texts.js'
 
 class AddFieldRuleDialog extends Component {
   render() {
@@ -13,8 +13,8 @@ class AddFieldRuleDialog extends Component {
         open={ open }
         fetchOptions={ this.fetchOptions }
         unavailableRules={ unavailableRules }
-        title={ addFieldTo(parentRuleName) }
-        addButtonText={ addField }
+        title={ addFieldRuleTo(parentRuleName) }
+        addButtonText={ addFieldRule }
         />
     )
   }

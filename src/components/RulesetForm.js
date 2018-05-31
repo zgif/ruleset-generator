@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import EntityList from './EntityList'
-import FieldList from './FieldList'
+import EntityRuleList from './EntityRuleList'
+import FieldRuleList from './FieldRuleList'
 import Button from 'material-ui/Button'
 import { generateRuleset } from '../utils/Texts'
 
@@ -12,8 +12,8 @@ class RulesetForm extends Component {
   render() {
     return (
       <form onSubmit={ this.onSubmit }>
-        <EntityList entities={ this.props.rootEntities } />
-        <FieldList fields={ this.props.rootFields } />
+        <EntityRuleList rules={ this.props.rootEntities } />
+        <FieldRuleList rules={ this.props.rootFieldRules } />
         <Button size="large" variant="raised" color="primary">
           { generateRuleset }
         </Button>

@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import Typography from 'material-ui/Typography'
 import Grid from 'material-ui/Grid'
 import RuleSelect from './RuleSelect'
-import './EntityHeader.css'
+import './EntityRuleHeader.css'
 
-class EntityHeader extends Component {
+class EntityRuleHeader extends Component {
   render() {
     return (
-      <header className="EntityHeader">
+      <header className="EntityRuleHeader">
         <Grid container component="label">
           <Grid item xs={ 6 }>
             <Typography component="h1" variant="title">
@@ -23,4 +23,4 @@ class EntityHeader extends Component {
   }
 }
 
-export default EntityHeader
+export default EntityRuleHeader

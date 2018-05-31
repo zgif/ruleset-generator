@@ -7,7 +7,7 @@ const mapStateToProps = state => {
 
   return {
     rootEntities: getRootRules(activeRuleset, 'entity'),
-    rootFields: getRootRules(activeRuleset, 'field')
+    rootFieldRules: getRootRules(activeRuleset, 'field')
   }
 }
 

@@ -13,11 +13,11 @@ export const usageOptions = {
   not: 'not'
 }
 
-export const addField = 'Add field'
-export const addFieldTo = (targetName) => `Add field to ${ targetName }`
+export const addFieldRule = 'Add field'
+export const addFieldRuleTo = (targetName) => `Add field to ${ targetName }`
 
-export const addEntity = 'Add entity'
-export const addEntityTo = (targetName) => `Add entity to ${ targetName }`
+export const addEntityRule = 'Add entity'
+export const addEntityRuleTo = (targetName) => `Add entity to ${ targetName }`
 
 export const cancel = 'Cancel'
 
