@@ -12,6 +12,7 @@ From this directory run: `npm start` and an HTTP server will spin up and your br
 
 ### Limitations
 
+* This application breaks if the XSD is invalid; e.g. in http://zgif.org/api/ruleset/subset_52.xsd there's no `Account`.
 * It's not possible to download with the mocked API
 * It's not possible to consume the live API locally unless CORS is disabled in your browser. On Chrome you can achieve that by using [this extension](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en). _Note that you should the extension disables a good security feature of Google Chrome, don't forget to disable the extension after using it._
 

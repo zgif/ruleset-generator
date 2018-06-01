@@ -1,21 +1,17 @@
 # Next
 
-1. Update Redux store when selects change to make sure download has the view state
+1. Fix bug: select something in the select, unselect, select again -> error thrown
 2. Fix some component state being kept - probably get fixed by the solution of item 0
     - some values are not being replaced by empty (e.g. select is not, ruleset changes and the select should be empty but it's still "not")
     - when opening the add item dialog, the data fetched from the previous entity is still displayed
-3. Update view once add item dialogs close (probably a piece of cake after having 2)
-4. Test in multiple browsers?
-5. Replace the select by URL (spec change)
-6. Fix font-face in the dialogs
-7. Fix console warnings
-8. Finish README so that zgif knows how to install it
-9. Document
-    a - It's not possible to download with the mocked API
-    b - It's not possible to use the live API locally unless CORS is disabled in your browser. On Chrome you can achieve that by using [this extension](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en).
-10. Send a message to Thomas and the zgif contributors delivering the project
+3. Fix console warnings
+4. Send a message to Thomas and the zgif contributors delivering the project
 
 # Future
+
+## Bugs to fix
+
+* When adding a new rule after adding a rule, the dialog still shows the previously added rule which allows users to add duplicate rules.
 
 ## Features
 
@@ -24,6 +20,7 @@
 * Make the entities collapsible and collapse all of them initially by default
 * Allow the addition/removal of root entities and fields (not in the mocked design but maybe wanted)
 * Make it officially compatible with browsers other than Chrome-stable
+* Remove an entities and fields
 
 ## UX
 
@@ -32,6 +29,7 @@
 * Fields and entities deletion
 * Add loading indicators while waiting for backend
     * https://material-ui-next.com/demos/progress/#progress
+* Closing dialogs with escape or clicking in the backdrop
 
 ## Architecture improvements
 
@@ -42,6 +40,13 @@
 * Reduce duplications in AddFieldDialog and AddEntityDialog
 * Add tests (with enzyme?)
 * Restructure CSS according to best practices
+* Maybe move the ui state tracking from React to Redux (e.g. tracking the open state of the dialogs)
+* DRY state composing: e.g. parsing in Zgif and actions/addRule
+* Dry actions into the same file? And then use the spread operator in the arguments list to DRY code
+* Improve documentation for the mocked API mode
+
+## Requires API changes
+* The API returns fields in Capitalizedformat in the ruleset endpoint but in lowerCamelCase in the entity endpoint. Frontend is normalizing that to make sure things work but the API should change that and the workarounds should be removed. (workaround done in ZgifApi#parseRulesetToApiFormat)
 
 ## Eye candy
 
