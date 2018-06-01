@@ -53,7 +53,7 @@ function parseRulesetFromApiFormat(ruleset) {
 
     // Normalizing case of objectName value because of APIs mismatch
     if (rule.objectType === 'field') {
-      rule.objectName = rule.xpath.match(/\[(\w+)\]$/)[1]
+      rule.objectName = rule.xpath.match(/\[([@\w]+)\]$/)[1]
     }
 
     if (!rule.parentPath) {
