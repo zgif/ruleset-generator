@@ -7,7 +7,7 @@ class EntityRuleList extends Component {
     return (
       <List>
         { this.props.rules.map(rule => (
-          <ListItem key={ rule.name } disableGutters>
+          <ListItem key={ rule.path } disableGutters>
             <ListItemText>
               <ConnectedEntityRule { ...rule } />
             </ListItemText>

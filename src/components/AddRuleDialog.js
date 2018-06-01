@@ -56,7 +56,7 @@ class AddRuleDialog extends Component {
         <DialogContent
           style={{ overflowY: 'visible'}}
           >
-          <Typography>
+          <Typography component="div">
             <Select
               value={ this.state.value }
               onChange={ this.onSelectChange }

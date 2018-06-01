@@ -7,7 +7,7 @@ class FieldRuleList extends Component {
     return (
       <List>
         { this.props.rules.map(rule => (
-          <ListItem key={ rule.name } disableGutters>
+          <ListItem key={ rule.path } disableGutters>
             <ListItemText style={{ paddingRight: 0 }}>
               <FieldRule { ...rule } />
             </ListItemText>
