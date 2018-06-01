@@ -1,5 +1,8 @@
 # ruleset-generator
 
+![Screenshot](screenshot-1.png)
+![Screenshot](screenshot-2.png)
+
 ## Installation
 
 From this directory run: `npm install`.
