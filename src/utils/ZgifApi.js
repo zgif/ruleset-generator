@@ -120,11 +120,21 @@ function parseRulesetToApiFormat(ruleset) {
   const rules = []
 
   for (const path in rulesByPath) {
-    const rule = rulesByPath[path]
+    // Cloning rule object not to mutate the app state
+    const rule = { ...rulesByPath[path] }
+
+    // Reverting normalization done in parseRulesetFromApiFormat
+    if (rule.objectType === 'field') {
+      const name = rule.objectName.toLowerCase();
+
+      rule.objectName = `${name.charAt(0).toUpperCase()}${name.slice(1)}`
+    }
+
+    const objectParents = rule.parentPath ? rule.parentPath.split(',') : []
 
     rules.push({
       objectType: rule.objectType,
-      objectParents: rule.objectParents,
+      objectParents,
       objectName: rule.objectName,
       ruleType: rule.ruleType,
       value: rule.value
