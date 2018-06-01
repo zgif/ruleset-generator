@@ -1,6 +1,6 @@
 import RuleSelect from '../components/RuleSelect'
 import { connect } from 'react-redux'
-import updateRule from '../actions/updateRule'
+import updateRuleValue from '../actions/updateRuleValue'
 
 const mapStateToProps = () => {
   return {
@@ -10,7 +10,7 @@ const mapStateToProps = () => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onChange: (e) => {
-      dispatch(updateRule(ownProps.path, e.target.value))
+      dispatch(updateRuleValue(ownProps.path, e.target.value))
     }
   }
 }
