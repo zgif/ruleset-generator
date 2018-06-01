@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import RuleSelect from './RuleSelect'
+import ConnectedRuleSelect from '../containers/ConnectedRuleSelect'
 import Grid from 'material-ui/Grid'
 import './FieldRule.css'
 
@@ -11,7 +11,8 @@ class FieldRule extends Component {
           { this.props.objectName }
         </Grid>
         <Grid item xs={ 6 }>
-          <RuleSelect defaultValue={ this.props.value } />
+          <ConnectedRuleSelect path={ this.props.path }
+                               value={ this.props.value } />
         </Grid>
       </Grid>
     )

@@ -1,5 +1,5 @@
 import { UPDATE_ACTIVE_RULESET } from '../actions/types'
-import rules from './rules'
+import rulesByPath from './rulesByPath'
 
 const initialState = {
   rulesByPath: {},
@@ -16,8 +16,7 @@ export default function (state = initialState, action) {
   default:
     return {
       ...state,
-      // To be redefined.
-      // rules: rules(state.rules, action)
+      rulesByPath: rulesByPath(state.rulesByPath, action)
     }
   }
 }

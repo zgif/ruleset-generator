@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Typography from 'material-ui/Typography'
 import Grid from 'material-ui/Grid'
-import RuleSelect from './RuleSelect'
+import ConnectedRuleSelect from '../containers/ConnectedRuleSelect'
 import './EntityRuleHeader.css'
 
 class EntityRuleHeader extends Component {
@@ -15,7 +15,8 @@ class EntityRuleHeader extends Component {
             </Typography>
           </Grid>
           <Grid item xs={ 6 }>
-            <RuleSelect defaultValue={ this.props.value }/>
+            <ConnectedRuleSelect path={ this.props.path }
+                                 value={ this.props.value } />
           </Grid>
         </Grid>
       </header>

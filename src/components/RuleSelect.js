@@ -21,25 +21,12 @@ const usageOptions = [
 ]
 
 class RuleSelect extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      value: this.props.defaultValue || ''
-    }
-  }
-
   renderOptions() {
     return usageOptions.map(option => (
       <option key={ option.value } value={ option.value }>
         { option.text }
       </option>
     ))
-  }
-
-  onChange = (event) => {
-    this.setState({
-      value: event.currentTarget.value
-    })
   }
 
   render() {
@@ -49,8 +36,8 @@ class RuleSelect extends Component {
       <FormControl>
         <Select
           native
-          value={ this.state.value }
-          onChange={ this.onChange }
+          value={ this.props.value }
+          onChange={ this.props.onChange }
         >
           <option></option>
           { options }
