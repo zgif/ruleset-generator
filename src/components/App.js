@@ -7,13 +7,6 @@ import { fetchRuleset } from '../utils/ZgifApi'
 import updateActiveRuleset from '../actions/updateActiveRuleset'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      ruleset: null
-    }
-  }
-
   componentDidMount() {
     document.title = appTitle
   }
@@ -21,7 +14,6 @@ class App extends Component {
   onRulesetChange = (rulesetUrl) => {
     (rulesetUrl ? fetchRuleset(rulesetUrl) : Promise.resolve())
       .then(ruleset => {
-        this.setState({ ruleset })
         this.props.dispatch(updateActiveRuleset(ruleset ? ruleset : {}));
       })
   }
@@ -31,8 +23,7 @@ class App extends Component {
       <div className="App">
         <CssBaseline />
         <AppHeader />
-        <Main ruleset={ this.state.ruleset }
-              onRulesetChange={ this.onRulesetChange } />
+        <Main onRulesetChange={ this.onRulesetChange } />
       </div>
     )
   }
