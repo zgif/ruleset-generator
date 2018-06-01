@@ -1,12 +1,3 @@
-# Next
-
-1. Fix bug: select something in the select, unselect, select again -> error thrown
-2. Fix some component state being kept - probably get fixed by the solution of item 0
-    - some values are not being replaced by empty (e.g. select is not, ruleset changes and the select should be empty but it's still "not")
-    - when opening the add item dialog, the data fetched from the previous entity is still displayed
-3. Fix console warnings
-4. Send a message to Thomas and the zgif contributors delivering the project
-
 # Future
 
 ## Bugs to fix
