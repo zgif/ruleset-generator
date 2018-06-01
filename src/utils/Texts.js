@@ -4,7 +4,7 @@ export const appDescription = `
   You can choose a base ruleset and then modify it.
 `
 
-export const baseRuleset = 'Base ruleset'
+export const baseRulesetUrl = 'Base ruleset URL'
 
 export const usage = 'Usage'
 export const usageOptions = {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import BaseRulesetSelect from '../components/BaseRulesetSelect'
+import BaseRulesetInput from '../components/BaseRulesetInput'
 import ActiveRulesetForm from '../containers/ActiveRulesetForm'
 import Typography from 'material-ui/Typography'
 import Grid from 'material-ui/Grid'
@@ -8,12 +8,6 @@ import './Main.css'
 
 class Main extends Component {
   render() {
-    const baseRulesetSelect = this.props.rulesets && (
-      <BaseRulesetSelect rulesets={ this.props.rulesets }
-                         defaultValue={ this.props.ruleset && this.props.ruleset.id }
-                         onChange={ this.props.onRulesetChange }/>
-    )
-
     const rulesetFormGrid = this.props.ruleset && (
       <Grid item xs={ 12 }>
         <ActiveRulesetForm />
@@ -26,7 +20,8 @@ class Main extends Component {
           <Typography paragraph>
             { appDescription }
           </Typography>
-          { baseRulesetSelect }
+          <BaseRulesetInput defaultValue={ this.props.ruleset && this.props.ruleset.id }
+                            onChange={ this.props.onRulesetChange }/>
         </Grid>
         
         { rulesetFormGrid }

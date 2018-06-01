@@ -16,15 +16,6 @@ function fetchJson(path, fetchOptions, apiMode) {
   
 }
 
-export function fetchRulesets() {
-  if (CURRENT_API_MODE === API_MODE.mocked) {
-    return fetchJson('rulesets')
-  }
-
-  // Using a mocked version here too because there's no live endpoint available.
-  return fetchJson('rulesets_live', {}, API_MODE.mocked)
-}
-
 function getRulesByPath(rules) {
   const rulesByPath = {}
 

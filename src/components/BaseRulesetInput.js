@@ -1,23 +1,15 @@
 import React, { Component } from 'react'
-import Select from 'material-ui/Select'
+import Input from 'material-ui/Input'
 import { InputLabel } from 'material-ui/Input'
 import { FormControl } from 'material-ui/Form'
-import { baseRuleset } from '../utils/Texts'
+import { baseRulesetUrl } from '../utils/Texts'
 
-class BaseRulesetSelect extends Component {
+class BaseRulesetInput extends Component {
   constructor(props) {
     super(props)
     this.state = {
       value: this.props.defaultValue || ''
     }
-  }
-
-  renderOptions() {
-    return this.props.rulesets.map(ruleset => (
-      <option key={ ruleset.url } value={ ruleset.url }>
-        { ruleset.name }
-      </option>
-    ))
   }
 
   onChange = (event) => {
@@ -28,28 +20,21 @@ class BaseRulesetSelect extends Component {
   }
 
   render() {
-    const options = this.renderOptions()
-
     return (
-      <FormControl>
+      <FormControl style={{ width: '100%'}}>
         <InputLabel htmlFor="base-ruleset">
-          { baseRuleset }
+          { baseRulesetUrl }
         </InputLabel>
-        <Select
-          style={{ minWidth: '200px'}}
-          native
+        <Input
           value={ this.state.value }
           inputProps={{
             id: 'base-ruleset'
           }}
           onChange={ this.onChange }
-        >
-          <option></option>
-          { options }
-        </Select>
+        />
       </FormControl>
     )
   }
 }
 
-export default BaseRulesetSelect
+export default BaseRulesetInput
