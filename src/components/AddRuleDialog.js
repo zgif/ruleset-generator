@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Button from 'material-ui/Button'
+import Typography from 'material-ui/Typography'
 import Dialog, { DialogActions, DialogContent, DialogTitle } from 'material-ui/Dialog'
 import { cancel } from '../utils/Texts.js'
 import Select from 'react-select'
@@ -55,13 +56,15 @@ class AddRuleDialog extends Component {
         <DialogContent
           style={{ overflowY: 'visible'}}
           >
-          <Select
-            value={ this.state.value }
-            onChange={ this.onSelectChange }
-            options={ this.state.options }
-            isLoading={!this.state.options }
-            autoFocus
-            />
+          <Typography>
+            <Select
+              value={ this.state.value }
+              onChange={ this.onSelectChange }
+              options={ this.state.options }
+              isLoading={!this.state.options }
+              autoFocus
+              />
+          </Typography>
         </DialogContent>
 
         <DialogActions>
