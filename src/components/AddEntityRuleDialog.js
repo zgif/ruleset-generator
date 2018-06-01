@@ -21,7 +21,7 @@ class AddEntityRuleDialog extends Component {
 
   fetchOptions = () => {
     return fetchEntity(this.props.parentRuleName)
-      .then(entity => entity.entities.map(entity => entity.name)) 
+      .then(entity => entity.entities) 
   }
 }
 

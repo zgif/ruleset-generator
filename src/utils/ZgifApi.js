@@ -10,8 +10,8 @@ function getUrl(path, apiMode = CURRENT_API_MODE) {
   return url
 }
 
-function fetchJson(path, apiMode) {
-  return fetch(getUrl(path, apiMode))
+function fetchJson(path, fetchOptions, apiMode) {
+  return fetch(getUrl(path, apiMode), fetchOptions)
     .then(response => response.json())
   
 }
@@ -22,7 +22,7 @@ export function fetchRulesets() {
   }
 
   // Using a mocked version here too because there's no live endpoint available.
-  return fetchJson('rulesets_live', API_MODE.mocked)
+  return fetchJson('rulesets_live', {}, API_MODE.mocked)
 }
 
 function getRulesByPath(rules) {
@@ -60,6 +60,11 @@ function parseRulesetFromApiFormat(ruleset) {
   for (const path in rulesByPath) {
     const rule = rulesByPath[path]
 
+    // Normalizing case of objectName value because of APIs mismatch
+    if (rule.objectType === 'field') {
+      rule.objectName = rule.xpath.match(/\[(\w+)\]$/)[1]
+    }
+
     if (!rule.parentPath) {
       rootRulePaths[rule.objectType].push(path);
       continue;
@@ -85,8 +90,29 @@ export function fetchRuleset(url) {
     .then((ruleset) => parseRulesetFromApiFormat(ruleset))
 }
 
+function parseEntityFromApiFormat(entity) {
+  const { entityName, fields, subEntities } = entity
+
+  return {
+    name: entityName,
+    entities: subEntities,
+    fields
+  }
+}
+
 export function fetchEntity(name) {
-  return fetchJson(`entities/${ name }`)
+  let url;
+
+  if (CURRENT_API_MODE === API_MODE.mocked) {
+    url = `entities/${ name }`
+
+  } else {
+    const params = new URLSearchParams({name})
+    url = `entity?${ params.toString() }`
+  }
+
+  return fetchJson(url)
+    .then((entity) => parseEntityFromApiFormat(entity))
 }
 
 function parseRulesetToApiFormat(ruleset) {
