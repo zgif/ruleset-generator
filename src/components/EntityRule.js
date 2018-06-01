@@ -25,7 +25,7 @@ class EntityRule extends Component {
     this.setState({ addingFieldRule: false })
 
     if (fieldName) {
-      // add field
+      this.props.onAddRule('field', fieldName);
     }
   }
 
@@ -37,7 +37,7 @@ class EntityRule extends Component {
     this.setState({ addingEntityRule: false })
 
     if (entityName) {
-      // add field
+      this.props.onAddRule('entity', entityName);
     }
   }
 

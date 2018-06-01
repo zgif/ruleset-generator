@@ -1,23 +1,23 @@
-import { ADD_RULE, UPDATE_RULE_VALUE } from '../actions/types'
+import { ADD_RULE, UPDATE_RULE_VALUE, ADD_CHILD_RULE_RELATION } from '../actions/types'
 import rule from './rule'
 
 export default function (state = {}, action) {
+  const { payload } = action
+
   switch (action.type) {
-  // case ADD_RULE:
-  //   return {
-  //     ...state,
-  //     {
-  //       type: 'basic',
-  //       ...action.payload.objectType
-  //     }
-  //   }
-
-  case UPDATE_RULE_VALUE:
-    const path = action.payload.path
-
+  case ADD_RULE:
     return {
       ...state,
-      [path]: rule(state[path], action)
+      [payload.path]: {
+        ...payload
+      }
+    }
+
+  case ADD_CHILD_RULE_RELATION:
+  case UPDATE_RULE_VALUE:
+    return {
+      ...state,
+      [payload.path]: rule(state[payload.path], action)
     }
 
   default:

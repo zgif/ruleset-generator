@@ -1,6 +1,8 @@
 import EntityRule from '../components/EntityRule'
 import { connect } from 'react-redux'
 import { getChildRules } from '../utils/Store'
+import addRule from '../actions/addRule'
+import addChildRuleRelation from '../actions/addChildRuleRelation'
 
 const mapStateToProps = (state, ownProps) => {
   const { activeRuleset } = state
@@ -11,8 +13,15 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch, ownProps) => {
   return {
+    onAddRule: (type, name) => {
+      const parentPath = ownProps.path
+      const path = parentPath ? [parentPath, name].join() : name
+
+      dispatch(addRule(parentPath, path, type, name))
+      dispatch(addChildRuleRelation(parentPath, type, path))
+    }
   }
 }
 
