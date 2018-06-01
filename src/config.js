@@ -10,4 +10,4 @@ export const API = {
   }
 }
 
-export const CURRENT_API_MODE = API_MODE.mocked
+export const CURRENT_API_MODE = API_MODE.live
