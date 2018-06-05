@@ -14,7 +14,7 @@ From this directory run: `npm start` and an HTTP server will spin up and your br
 ## Build for production
 
 Configure the deployment path for the build with in [package.json](package.json) in this directory.
-Currently it is set to `"homepage": "/ruleset-generator/"` to meet the zgif.org requirements
+Currently it is set to `"homepage": "/ruleset-generator/"` to meet the zgif.org requirements.
 
 From this directory run: `npm run build` to get the build artefact in /build.
 
